@@ -1,2 +1,2 @@
-# education-fontend
-education font end
+# sme-education-fontend
+sme-education font end
