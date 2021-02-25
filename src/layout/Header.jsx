@@ -159,7 +159,7 @@ export const Header = () => {
 							>
 								<div className="  nd_options_display_table nd_options_float_right">
 									<div className="nd_options_display_table_cell nd_options_vertical_align_middle    ">
-										<a href="http://www.nicdarkthemes.com/themes/education/wp/demo/university/learning-account/">
+										<Link to="/sign-in">
 											<img
 												alt=""
 												width="15"
@@ -167,23 +167,23 @@ export const Header = () => {
 												className="nd_options_margin_left_20 nd_options_float_left"
 												src="http://www.nicdarkthemes.com/themes/education/wp/demo/university/wp-content/plugins/nd-shortcodes/addons/customizer/shortcodes/top-header/img/login-white.svg"
 											/>
-										</a>
+										</Link>
 									</div>
 
 									<div className="nd_options_display_table_cell nd_options_vertical_align_middle    ">
-										<a
+										<Link
 											style={{ color: ' #fff' }}
 											className="nd_options_margin_left_10"
-											href="http://www.nicdarkthemes.com/themes/education/wp/demo/university/learning-account/"
+											to="/sign-in"
 										>
 											REGISTER
-										</a>
+										</Link>
 									</div>
 								</div>
 
 								<div className="  nd_options_display_table nd_options_float_right">
 									<div className="nd_options_display_table_cell nd_options_vertical_align_middle    ">
-										<a href="http://www.nicdarkthemes.com/themes/education/wp/demo/university/learning-account/">
+										<Link to="/sign-in">
 											<img
 												alt=""
 												width="15"
@@ -191,7 +191,7 @@ export const Header = () => {
 												className="nd_options_margin_left_20 nd_options_float_left"
 												src="http://www.nicdarkthemes.com/themes/education/wp/demo/university/wp-content/plugins/nd-shortcodes/addons/customizer/shortcodes/top-header/img/user-white.svg"
 											/>
-										</a>
+										</Link>
 									</div>
 
 									<div className="nd_options_display_table_cell nd_options_vertical_align_middle    ">
@@ -306,7 +306,7 @@ export const Header = () => {
 									<div className="nd_options_display_table_cell nd_options_vertical_align_middle">
 										<Link
 											className="nd_options_navigation_open_search_content nd_options_margin_left_20 nd_options_float_left"
-											href="#"
+											to="#"
 										>
 											<img
 												alt=""
