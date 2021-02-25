@@ -1,45 +1,30 @@
-import logo from './logo.svg';
 import './App.css';
-import Home from './Component/Home/index'
-import Courses from './Component/Courses/index'
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
-function App() {
-  return (
-    // <Router>
-    //   <div>
-    //     <nav>
-    //       <ul>
-    //         <li>
-    //           <Link to="/">Home</Link>
-    //         </li>
-    //         <li>
-    //           <Link to="/courses">ourses</Link>
-    //         </li>
-    //         <li>
-    //           <Link to="/users">Users</Link>
-    //         </li>
-    //       </ul>
-    //     </nav>
+import './styles.css';
 
-    //     <Switch>
-    //       <Route path="/about">
-    //         <About />
-    //       </Route>
-    //       <Route path="/courses">
-    //         <Courses />
-    //       </Route>
-    //       <Route path="/">
-            <Home />
-    //       </Route>
-    //     </Switch>
-    //   </div>
-    // </Router>
-  )
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import { Home } from './page/home';
+import { Footer, Header, Responsive, Tool } from './layout';
+import { Home1 } from './page/home1';
+function App() {
+	return (
+		<Router>
+			<div class="nicdark_site nicdark_bg_white nicdark_front_page ">
+				<Responsive />
+				<Header />
+				<Tool />
+
+				<Switch>
+					<Route path="/" exact>
+						<Home />
+					</Route>
+					<Route path="/home1" exact>
+						<Home1 />
+					</Route>
+				</Switch>
+				<Footer />
+			</div>
+		</Router>
+	);
 }
 
 export default App;
