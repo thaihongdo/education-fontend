@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import { Home } from './page/home';
 import { Footer, Header, Responsive, Tool } from './layout';
 import { Home1 } from './page/home1';
+import { Login } from './page/login';
 function App() {
 	return (
 		<Router>
@@ -19,6 +20,9 @@ function App() {
 					</Route>
 					<Route path="/home1" exact>
 						<Home1 />
+					</Route>
+					<Route path="/sign-in" exact>
+						<Login />
 					</Route>
 				</Switch>
 				<Footer />

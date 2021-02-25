@@ -195,13 +195,13 @@ export const Header = () => {
 									</div>
 
 									<div className="nd_options_display_table_cell nd_options_vertical_align_middle    ">
-										<a
+										<Link
 											style={{ color: ' #fff' }}
 											className="nd_options_margin_left_10"
-											href="http://www.nicdarkthemes.com/themes/education/wp/demo/university/learning-account/"
+											to="/sign-in"
 										>
 											LOGIN
-										</a>
+										</Link>
 									</div>
 								</div>
 							</div>
