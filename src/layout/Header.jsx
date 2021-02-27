@@ -39,7 +39,7 @@ export const Header = () => {
 											className="nd_options_margin_left_10"
 											to="/sign-in"
 										>
-											REGISTER
+											Đăng kí
 										</Link>
 									</div>
 								</div>
@@ -63,7 +63,7 @@ export const Header = () => {
 											className="nd_options_margin_left_10"
 											to="/sign-in"
 										>
-											LOGIN
+											Đăng nhập
 										</Link>
 									</div>
 								</div>
@@ -123,7 +123,7 @@ export const Header = () => {
 													</Link>
 													<SubMenu
 														items={[
-															{ to: '/home1', label: 'Search' },
+															{ to: '/home3', label: 'Search' },
 															{
 																to: '/home2',
 																label: 'Single Course',
@@ -151,7 +151,13 @@ export const Header = () => {
 													<Link to="/">TƯ VẤN</Link>
 												</li>
 												<li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1142">
-													<Link to="#"> QUẢN TRỊ</Link>
+													<Link to="#" aria-current="page"> QUẢN TRỊ </Link>
+													<SubMenu
+														items={[
+															{ to: '/tech', label: 'Công nghệ' },
+															
+														]}
+													/>
 												</li>
 												<li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-803">
 													<Link to="/">SỰ KIỆN</Link>
