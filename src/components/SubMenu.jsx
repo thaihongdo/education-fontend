@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
 export const SubMenu = (props) => {
 	return (
@@ -9,10 +10,10 @@ export const SubMenu = (props) => {
 					Home 1
 				</Link>
 			</li> */}
-			{props.items.map((item) => {
-				console.log('item',item)
+			{props.items.map((item, idx) => {
 				return (
 					<li
+						key={idx}
 						className={`menu-item menu-item-type-post_type menu-item-object-page ${
 							item.childrens ? 'menu-item-has-children' : ''
 						}`}
@@ -20,8 +21,11 @@ export const SubMenu = (props) => {
 						<Link to={item.to}>{item.label}</Link>
 						{item.childrens && (
 							<ul className="sub-menu">
-								{item.childrens.map((it) => (
-									<li className=" menu-item menu-item-type-post_type menu-item-object-courses">
+								{item.childrens.map((it, idx) => (
+									<li
+										key={idx}
+										className=" menu-item menu-item-type-post_type menu-item-object-courses"
+									>
 										<Link to={it.to}>{it.label}</Link>
 									</li>
 								))}
@@ -32,4 +36,19 @@ export const SubMenu = (props) => {
 			})}
 		</ul>
 	);
+};
+
+SubMenu.propTypes = {
+	items: PropTypes.arrayOf(
+		PropTypes.shape({
+			to: PropTypes.string,
+			label: PropTypes.string,
+			childrens: PropTypes.arrayOf(
+				PropTypes.shape({
+					to: PropTypes.string,
+					label: PropTypes.string,
+				})
+			),
+		})
+	).isRequired,
 };

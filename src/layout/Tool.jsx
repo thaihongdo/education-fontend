@@ -3,7 +3,7 @@ import React from 'react';
 export const Tool = () => {
 	return (
 		<>
-			{/* <div className="nd_tds_display_none_responsive nd_tds_dialog_open_content_dialog nd_tds_cursor_pointer nd_tds_right_30 nd_tds_bottom_30 nd_tds_position_fixed nd_tds_z_index_999">
+			<div className="nd_tds_display_none_responsive nd_tds_dialog_open_content_dialog nd_tds_cursor_pointer nd_tds_right_30 nd_tds_bottom_30 nd_tds_position_fixed nd_tds_z_index_999">
 				<a className="nd_tds_text_align_center nd_tds_width_65 nd_tds_float_left nd_tds_height_65 nd_tds_font_weight_bold nd_tds_display_table nd_tds_font_size_25 nd_tds_line_height_25 nd_tds_color_fff_important nd_tds_border_radius_100_percentage nd_tds_background_color_3 nd_tds_box_shadow_0_0_20_000_015 nd_tds_font_family_montserrat_important">
 					<img
 						width="25px"
@@ -12,7 +12,7 @@ export const Tool = () => {
 						src="http://www.nicdarkthemes.com/themes/education/wp/demo/university/wp-content/plugins/nd-theme-demos-switcher/addons/dialog/img/settings.svg"
 					/>
 				</a>
-			</div> */}
+			</div>
 			<div
 				className="nd_tds_display_none_responsive nd_tds_display_none"
 				id="nd_tds_dialog_content_dialog"
@@ -48,7 +48,7 @@ export const Tool = () => {
 							<div className="nd_tds_float_left nd_tds_width_33_percentage nd_tds_padding_10 nd_tds_box_sizing_border_box">
 								<a
 									className="nd_tds_outline_0"
-									target="_blank"
+									target
 									href="http://www.nicdarkthemes.com/themes/education/wp/demo/university/"
 								>
 									<img
@@ -60,7 +60,7 @@ export const Tool = () => {
 							<div className="nd_tds_float_left nd_tds_width_33_percentage nd_tds_padding_10 nd_tds_box_sizing_border_box">
 								<a
 									className="nd_tds_outline_0"
-									target="_blank"
+									target
 									href="http://www.nicdarkthemes.com/themes/education/wp/demo/design-school/"
 								>
 									<img
@@ -72,7 +72,7 @@ export const Tool = () => {
 							<div className="nd_tds_float_left nd_tds_width_33_percentage nd_tds_padding_10 nd_tds_box_sizing_border_box">
 								<a
 									className="nd_tds_outline_0"
-									target="_blank"
+									target
 									href="http://www.nicdarkthemes.com/themes/education/wp/demo/food-academy/"
 								>
 									<img
@@ -86,7 +86,7 @@ export const Tool = () => {
 							<div className="nd_tds_float_left nd_tds_width_33_percentage nd_tds_padding_10 nd_tds_box_sizing_border_box">
 								<a
 									className="nd_tds_outline_0"
-									target="_blank"
+									target
 									href="http://www.nicdarkthemes.com/themes/education/wp/demo/language-school/"
 								>
 									<img
@@ -98,7 +98,7 @@ export const Tool = () => {
 							<div className="nd_tds_float_left nd_tds_width_33_percentage nd_tds_padding_10 nd_tds_box_sizing_border_box">
 								<a
 									className="nd_tds_outline_0"
-									target="_blank"
+									target
 									href="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/"
 								>
 									<img
@@ -110,7 +110,7 @@ export const Tool = () => {
 							<div className="nd_tds_float_left nd_tds_width_33_percentage nd_tds_padding_10 nd_tds_box_sizing_border_box">
 								<a
 									className="nd_tds_outline_0"
-									target="_blank"
+									target
 									href="http://www.nicdarkthemes.com/themes/education/wp/demo/kindergarten/"
 								>
 									<img
@@ -124,7 +124,7 @@ export const Tool = () => {
 							<div className="nd_tds_float_left nd_tds_width_33_percentage nd_tds_padding_10 nd_tds_box_sizing_border_box">
 								<a
 									className="nd_tds_outline_0"
-									target="_blank"
+									target
 									href="http://www.nicdarkthemes.com/themes/education/wp/demo/music-school/"
 								>
 									<img
@@ -136,7 +136,7 @@ export const Tool = () => {
 							<div className="nd_tds_float_left nd_tds_width_33_percentage nd_tds_padding_10 nd_tds_box_sizing_border_box">
 								<a
 									className="nd_tds_outline_0"
-									target="_blank"
+									target
 									href="http://www.nicdarkthemes.com/themes/education/wp/demo/dance-academy/"
 								>
 									<img
@@ -148,7 +148,7 @@ export const Tool = () => {
 							<div className="nd_tds_float_left nd_tds_width_33_percentage nd_tds_padding_10 nd_tds_box_sizing_border_box">
 								<a
 									className="nd_tds_outline_0"
-									target="_blank"
+									target
 									href="http://www.nicdarkthemes.com/themes/education/wp/demo/driving-school/"
 								>
 									<img
@@ -163,7 +163,7 @@ export const Tool = () => {
 						<div className="nd_tds_section nd_tds_text_align_center">
 							<a
 								className="nd_tds_outline_0 nd_tds_display_inline_block nd_tds_text_align_center nd_tds_color_fff_important nd_tds_padding_10_20 nd_tds_font_family_montserrat_important nd_tds_font_size_16 nd_tds_line_height_16 nd_tds_border_radius_3 nd_tds_background_color_49bf8f nd_tds_box_shadow_0_4_0_349c72"
-								target="_blank"
+								target
 								href="https://1.envato.market/53YOn"
 							>
 								PURCHASE NOW
@@ -174,10 +174,10 @@ export const Tool = () => {
 				</div>
 			</div>
 
-			{/* <div className="nd_tds_display_none_responsive nd_tds_right_125 nd_tds_bottom_30 nd_tds_position_fixed nd_tds_z_index_999">
+			<div className="nd_tds_display_none_responsive nd_tds_right_125 nd_tds_bottom_30 nd_tds_position_fixed nd_tds_z_index_999">
 				<a
 					href="https://1.envato.market/53YOn"
-					target="_blank"
+					target
 					className="nd_tds_text_align_center nd_tds_width_65 nd_tds_float_left nd_tds_height_65 nd_tds_font_weight_bold nd_tds_display_table nd_tds_font_size_25 nd_tds_line_height_25 nd_tds_color_fff_important nd_tds_border_radius_100_percentage nd_tds_background_color_1 nd_tds_box_shadow_0_0_20_000_015 nd_tds_font_family_montserrat_important"
 				>
 					<span className="nd_tds_position_absolute nd_tds_top_22 nd_tds_left_13 nd_tds_font_size_8 nd_tds_line_height_8">
@@ -187,11 +187,11 @@ export const Tool = () => {
 						54
 					</span>
 				</a>
-			</div> */}
+			</div>
 
-			{/* <div className="nd_tds_display_none_responsive nd_tds_right_175 nd_tds_bottom_30 nd_tds_position_fixed nd_tds_z_index_999">
+			<div className="nd_tds_display_none_responsive nd_tds_right_175 nd_tds_bottom_30 nd_tds_position_fixed nd_tds_z_index_999">
 				<a
-					target="_blank"
+					target
 					className="nd_tds_border_radius_100_percentage nd_tds_width_35 nd_tds_height_35 nd_tds_float_left nd_tds_background_color_2 nd_tds_box_shadow_0_0_20_000_015"
 					href="https://1.envato.market/53YOn"
 				>
@@ -201,7 +201,7 @@ export const Tool = () => {
 						src="http://www.nicdarkthemes.com/themes/education/wp/demo/university/wp-content/plugins/nd-theme-demos-switcher/addons/fixed-img/img/envato.png"
 					/>
 				</a>
-			</div> */}
+			</div>
 		</>
 	);
 };

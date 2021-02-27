@@ -1,41 +1,44 @@
 import React, { useEffect } from 'react';
-import './styles.css'
-import FirstBanner from '../../assets/images/1-banner.jpg'
-import SecondBanner from '../../assets/images/1-banner(19).jpg'
-import ThirdBanner from '../../assets/images/mkt-banner.jpg'
+import './styles.css';
+import FirstBanner from '../../assets/images/1-banner.jpg';
+import SecondBanner from '../../assets/images/1-banner(19).jpg';
+import ThirdBanner from '../../assets/images/mkt-banner.jpg';
 export const Home = () => {
 	let slideIndex = 1;
 
 	useEffect(() => {
 		showSlides(slideIndex);
-	}, [])
-
+	}, []);
 
 	function plusSlides(n) {
-		showSlides(slideIndex += n);
-		console.log('+')
+		showSlides((slideIndex += n));
+		console.log('+');
 	}
 
 	function currentSlide(n) {
-		showSlides(slideIndex = n);
+		showSlides((slideIndex = n));
 	}
 
 	function showSlides(n) {
 		let i;
-		let slides = document.getElementsByClassName("mySlides");
-		console.log('slide', slides)
-		const dots = document.getElementsByClassName("dot");
-		if (n > slides.length) { slideIndex = 1 }
-		if (n < 1) { slideIndex = slides.length }
+		let slides = document.getElementsByClassName('mySlides');
+		console.log('slide', slides);
+		const dots = document.getElementsByClassName('dot');
+		if (n > slides.length) {
+			slideIndex = 1;
+		}
+		if (n < 1) {
+			slideIndex = slides.length;
+		}
 		for (i = 0; i < slides.length; i++) {
-			slides[i].style.display = "none";
+			slides[i].style.display = 'none';
 		}
 		for (i = 0; i < dots.length; i++) {
-			dots[i].className = dots[i].className.replace(" active", "");
+			dots[i].className = dots[i].className.replace(' active', '');
 		}
 		if (slides.length > 0) {
-			slides[slideIndex - 1].style.display = "block";
-			dots[slideIndex - 1].className += " active";
+			slides[slideIndex - 1].style.display = 'block';
+			dots[slideIndex - 1].className += ' active';
 		}
 	}
 
@@ -57,8 +60,12 @@ export const Home = () => {
 						<div className="mySlides fade">
 							<img src={ThirdBanner} style={{ width: '100%' }} />
 						</div>
-						<a className="prev" onClick={() => plusSlides(-1)}>&#10094;</a>
-						<a className="next" onClick={() => plusSlides(1)}>&#10095;</a>
+						<a className="prev" onClick={() => plusSlides(-1)}>
+							&#10094;
+						</a>
+						<a className="next" onClick={() => plusSlides(1)}>
+							&#10095;
+						</a>
 					</div>
 					<br />
 					<div style={{ textAlign: 'center' }}>
@@ -1236,7 +1243,6 @@ export const Home = () => {
 					</div>
 				</div>
 			</div>
-
-				</div>
+		</div>
 	);
 };
