@@ -11,11 +11,11 @@ export const Form = () => {
 				<div className="nd_learning_width_50_percentage nd_learning_float_left nd_learning_box_sizing_border_box nd_learning_padding_15 nd_learning_width_100_percentage_responsive">
 					<div className="nd_learning_section nd_learning_border_radius_3 nd_learning_border_1_solid_grey nd_learning_padding_20 nd_learning_box_sizing_border_box">
 						<h6 className="nd_options_second_font nd_learning_bg_green nd_learning_padding_5 nd_learning_border_radius_3 nd_learning_color_white_important nd_learning_display_inline_block">
-							ALREADY A MEMBER
+							Đã là thành viên
 						</h6>
 						<div className="nd_learning_section nd_learning_height_5"></div>
 						<h2>
-							<strong>Log In</strong>
+							<strong>Đăng nhập</strong>
 						</h2>
 
 						<form
@@ -25,7 +25,7 @@ export const Form = () => {
 							method="post"
 						>
 							<p className="login-username">
-								<label for="nd_learning_login_form_user">Username</label>
+								<label for="nd_learning_login_form_user">Tên đăng nhập</label>
 								<input
 									type="text"
 									name="log"
@@ -36,7 +36,7 @@ export const Form = () => {
 								/>
 							</p>
 							<p className="login-password">
-								<label for="nd_learning_login_form_password">Password</label>
+								<label for="nd_learning_login_form_password">Mật khẩu</label>
 								<input
 									type="password"
 									name="pwd"
@@ -55,7 +55,7 @@ export const Form = () => {
 										id="nd_learning_login_form_remember"
 										value="forever"
 									/>{' '}
-									Remember Me
+									Giữ trạng thái đăng nhập
 								</label>
 							</p>
 							<p className="login-submit">
@@ -64,13 +64,14 @@ export const Form = () => {
 									name="wp-submit"
 									id="nd_learning_login_form_submit"
 									className="button button-primary"
-									value="Log In"
+									value="Đăng nhập"
 								/>
 								<input
 									type="hidden"
 									name="redirect_to"
 									value="http://www.nicdarkthemes.com/themes/education/wp/demo/university/learning-account/"
 								/>
+
 							</p>
 						</form>
 					</div>
@@ -79,7 +80,7 @@ export const Form = () => {
 				<div className="nd_learning_width_50_percentage nd_learning_float_left nd_learning_box_sizing_border_box nd_learning_padding_15 nd_learning_width_100_percentage_responsive">
 					<div className="nd_learning_opacity_04 nd_learning_section nd_learning_bg_white nd_learning_border_radius_3 nd_learning_border_1_solid_grey nd_learning_padding_20 nd_learning_box_sizing_border_box">
 						<h6 className="nd_options_second_font nd_learning_bg_orange nd_learning_padding_5 nd_learning_border_radius_3 nd_learning_color_white_important nd_learning_display_inline_block">
-							I DO NOT HAVE AN ACCOUNT
+							Tôi không có tài khoản
 						</h6>
 						<div className="nd_learning_section nd_learning_height_5"></div>
 						<h2>
@@ -89,7 +90,7 @@ export const Form = () => {
 						<form action="#" method="post">
 							<p>
 								<label className="nd_learning_section nd_learning_margin_top_20">
-									Username *
+									Tên đăng nhập *
 								</label>
 								<input
 									readonly=""
@@ -101,7 +102,7 @@ export const Form = () => {
 							</p>
 							<p>
 								<label className="nd_learning_section nd_learning_margin_top_20">
-									Password *
+									Mật khẩu *
 								</label>
 								<input
 									readonly=""
@@ -137,7 +138,7 @@ export const Form = () => {
 							</p>
 							<p>
 								<label className="nd_learning_section nd_learning_margin_top_20">
-									First Name
+									Họ
 								</label>
 								<input
 									readonly=""
@@ -149,7 +150,7 @@ export const Form = () => {
 							</p>
 							<p>
 								<label className="nd_learning_section nd_learning_margin_top_20">
-									Last Name
+									Tên
 								</label>
 								<input
 									readonly=""

@@ -1,6 +1,44 @@
-import React from 'react';
-
+import React, { useEffect } from 'react';
+import './styles.css'
+import FirstBanner from '../../assets/images/1-banner.jpg'
+import SecondBanner from '../../assets/images/1-banner(19).jpg'
+import ThirdBanner from '../../assets/images/mkt-banner.jpg'
 export const Home = () => {
+	let slideIndex = 1;
+
+	useEffect(() => {
+		showSlides(slideIndex);
+	}, [])
+
+
+	function plusSlides(n) {
+		showSlides(slideIndex += n);
+		console.log('+')
+	}
+
+	function currentSlide(n) {
+		showSlides(slideIndex = n);
+	}
+
+	function showSlides(n) {
+		let i;
+		let slides = document.getElementsByClassName("mySlides");
+		console.log('slide', slides)
+		const dots = document.getElementsByClassName("dot");
+		if (n > slides.length) { slideIndex = 1 }
+		if (n < 1) { slideIndex = slides.length }
+		for (i = 0; i < slides.length; i++) {
+			slides[i].style.display = "none";
+		}
+		for (i = 0; i < dots.length; i++) {
+			dots[i].className = dots[i].className.replace(" active", "");
+		}
+		if (slides.length > 0) {
+			slides[slideIndex - 1].style.display = "block";
+			dots[slideIndex - 1].className += " active";
+		}
+	}
+
 	return (
 		<div className="nd_options_container nd_options_padding_0_15 nd_options_box_sizing_border_box nd_options_clearfix">
 			<div
@@ -8,433 +46,25 @@ export const Home = () => {
 				id="post-204"
 				className="post-204 page type-page status-publish hentry"
 			>
-				<div className="vc_row wpb_row vc_row-fluid">
-					<div className="wpb_column vc_column_container vc_col-sm-12">
-						<div className="vc_column-inner ">
-							<div className="wpb_wrapper">
-								<div className="wpb_revslider_element wpb_content_element">
-									<link
-										href="http://fonts.googleapis.com/css?family=Montserrat:700"
-										rel="stylesheet"
-										property="stylesheet"
-										type="text/css"
-										media="all"
-									/>
-									<div
-										id="rev_slider_4_1_wrapper"
-										className="rev_slider fullwidthabanner revslider-initialised tp-simpleresponsive rev_redraw_on_blurfocus"
-										data-source="gallery"
-										style={{
-											margin: '0px auto',
-											padding: '0px',
-											marginTop: '0px',
-											marginBottom: '0px',
-										}}
-									>
-										<div
-											id="rev_slider_4_1"
-											className="rev_slider fullwidthabanner"
-											style={{ display: 'none' }}
-											data-version="5.4.8.3"
-										>
-											<ul>
-												<li
-													data-index="rs-7"
-													data-transition="fade"
-													data-slotamount="default"
-													data-hideafterloop="0"
-													data-hideslideonmobile="off"
-													data-easein="default"
-													data-easeout="default"
-													data-masterspeed="300"
-													data-thumb="http://www.nicdarkthemes.com/themes/education/wp/demo/university/wp-content/uploads/sites/3/2016/08/parallax5-100x50.jpg"
-													data-rotate="0"
-													data-saveperformance="off"
-													data-title="Slide"
-													data-param1=""
-													data-param2=""
-													data-param3=""
-													data-param4=""
-													data-param5=""
-													data-param6=""
-													data-param7=""
-													data-param8=""
-													data-param9=""
-													data-param10=""
-													data-description=""
-												>
-													<img
-														src="http://www.nicdarkthemes.com/themes/education/wp/demo/university/wp-content/uploads/sites/3/2016/08/parallax5.jpg"
-														alt=""
-														title="parallax5"
-														width="1920"
-														height="1080"
-														data-bgposition="center center"
-														data-kenburns="on"
-														data-duration="10000"
-														data-ease="Linear.easeNone"
-														data-scalestart="100"
-														data-scaleend="110"
-														data-rotatestart="0"
-														data-rotateend="0"
-														data-blurstart="0"
-														data-blurend="0"
-														data-offsetstart="0 0"
-														data-offsetend="0 0"
-														data-bgparallax="14"
-														className="rev-slidebg"
-														data-no-retina
-													/>
-													<div
-														className="tp-caption tp-shape tp-shapewrapper  tp-resizeme"
-														id="slide-7-layer-4"
-														data-x="center"
-														data-hoffset=""
-														data-y="center"
-														data-voffset=""
-														data-width="['3000']"
-														data-height="['873']"
-														data-type="shape"
-														data-responsive_offset="on"
-														data-frames='[{"from":"opacity:0;","speed":300,"to":"o:1;","delay":0,"ease":"Power2.easeInOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"}]'
-														data-textAlign="['left','left','left','left']"
-														data-paddingtop="[0,0,0,0]"
-														data-paddingright="[0,0,0,0]"
-														data-paddingbottom="[0,0,0,0]"
-														data-paddingleft="[0,0,0,0]"
-														style={{
-															zIndex: 5,
-															backgroundColor: 'rgba(0,0,0,0.50)',
-															background:
-																'linear-gradient(to bottom, rgba(101,100,96,0.8) 0%,rgba(101,100,96,0.3) 35%,rgba(101,100,96,0.3) 45%,rgba(101,100,96,0.9) 100%',
-														}}
-													></div>
-
-													<div
-														className="tp-caption   tp-resizeme"
-														id="slide-7-layer-8"
-														data-x="30"
-														data-y="bottom"
-														data-voffset="150"
-														data-width="['auto']"
-														data-height="['auto']"
-														data-visibility="['on','on','off','off']"
-														data-type="text"
-														data-responsive_offset="on"
-														data-frames='[{"from":"opacity:0;","speed":500,"to":"o:1;","delay":500,"ease":"Power2.easeInOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"}]'
-														data-textAlign="['left','left','left','left']"
-														data-paddingtop="[0,0,0,0]"
-														data-paddingright="[0,0,0,0]"
-														data-paddingbottom="[0,0,0,0]"
-														data-paddingleft="[0,0,0,0]"
-														style={{
-															zIndex: 6,
-															whiteSpace: 'nowrap',
-															fontSize: '20px',
-															lineHeight: '22px',
-															fontWeight: 400,
-															color: 'rgba(255,255,255,1)',
-														}}
-													>
-														<h1
-															style={{
-																color: '#ffffff',
-																fontSize: '60px',
-																lineHeight: '60px',
-																fontWeight: 'bold',
-															}}
-															className=" nd_options_first_font "
-														>
-															In our School you can
-														</h1>
-														<div
-															style={{ height: '20px' }}
-															className="nicdark_section"
-														></div>
-
-														<div className="nd_options_display_none_all_iphone nd_options_section  nd_options_typewriter_85 ">
-															<strong
-																style={{ color: '#ffffff', fontSize: '40px' }}
-																className="nd_options_first_font"
-															>
-																learn{' '}
-															</strong>
-
-															<div className="nd_options_typed_strings_85">
-																<p>
-																	<strong
-																		style={{
-																			color: '#ffffff',
-																			fontSize: '40px',
-																		}}
-																		className="nd_options_first_font"
-																	>
-																		{' '}
-																		how to make an exam
-																	</strong>
-																</p>
-																<p>
-																	<strong
-																		style={{
-																			color: '#ffffff',
-																			fontSize: '40px',
-																		}}
-																		className="nd_options_first_font"
-																	>
-																		philosophy
-																	</strong>
-																</p>
-																<p>
-																	<strong
-																		style={{
-																			color: '#ffffff',
-																			fontSize: '40px',
-																		}}
-																		className="nd_options_first_font"
-																	>
-																		{' '}
-																	</strong>
-																</p>
-															</div>
-
-															<span
-																className="nd_options_typed_85 nd_options_padding_botttom_5"
-																style={{
-																	whiteSpace: 'pre',
-																	borderBottom: '5px solid #ffffff',
-																}}
-															></span>
-														</div>
-													</div>
-												</li>
-												<li
-													data-index="rs-8"
-													data-transition="fade"
-													data-slotamount="default"
-													data-hideafterloop="0"
-													data-hideslideonmobile="off"
-													data-easein="default"
-													data-easeout="default"
-													data-masterspeed="300"
-													data-thumb="http://www.nicdarkthemes.com/themes/education/wp/demo/university/wp-content/uploads/sites/3/2016/08/parallax3-100x50.jpg"
-													data-rotate="0"
-													data-saveperformance="off"
-													data-title="Slide"
-													data-param1=""
-													data-param2=""
-													data-param3=""
-													data-param4=""
-													data-param5=""
-													data-param6=""
-													data-param7=""
-													data-param8=""
-													data-param9=""
-													data-param10=""
-													data-description=""
-												>
-													<img
-														src="http://www.nicdarkthemes.com/themes/education/wp/demo/university/wp-content/uploads/sites/3/2016/08/parallax3.jpg"
-														alt=""
-														title="parallax3"
-														width="1920"
-														height="1080"
-														data-bgposition="center bottom"
-														data-kenburns="on"
-														data-duration="10000"
-														data-ease="Linear.easeNone"
-														data-scalestart="100"
-														data-scaleend="110"
-														data-rotatestart="0"
-														data-rotateend="0"
-														data-blurstart="0"
-														data-blurend="0"
-														data-offsetstart="0 0"
-														data-offsetend="0 0"
-														data-bgparallax="14"
-														className="rev-slidebg"
-														data-no-retina
-													/>
-													<div
-														className="tp-caption tp-shape tp-shapewrapper  tp-resizeme"
-														id="slide-8-layer-4"
-														data-x="center"
-														data-hoffset=""
-														data-y="center"
-														data-voffset=""
-														data-width="['3000']"
-														data-height="['873']"
-														data-type="shape"
-														data-responsive_offset="on"
-														data-frames='[{"from":"opacity:0;","speed":300,"to":"o:1;","delay":0,"ease":"Power2.easeInOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"}]'
-														data-textAlign="['left','left','left','left']"
-														data-paddingtop="[0,0,0,0]"
-														data-paddingright="[0,0,0,0]"
-														data-paddingbottom="[0,0,0,0]"
-														data-paddingleft="[0,0,0,0]"
-														style={{
-															zIndex: 7,
-															backgroundColor: 'rgba(0,0,0,0.50)',
-															background:
-																'linear-gradient(to bottom, rgba(101,100,96,0.6) 0%,rgba(101,100,96,0.6) 75%,rgba(101,100,96,0) 100%)',
-														}}
-													></div>
-
-													<div
-														className="tp-caption   tp-resizeme"
-														id="slide-8-layer-1"
-														data-x="center"
-														data-hoffset=""
-														data-y="center"
-														data-voffset="-100"
-														data-width="['auto']"
-														data-height="['auto']"
-														data-visibility="['on','on','on','off']"
-														data-type="text"
-														data-responsive_offset="on"
-														data-frames='[{"from":"opacity:0;","speed":500,"to":"o:1;","delay":500,"ease":"Power2.easeInOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"}]'
-														data-textAlign="['left','left','left','left']"
-														data-paddingtop="[0,0,0,0]"
-														data-paddingright="[0,0,0,0]"
-														data-paddingbottom="[0,0,0,0]"
-														data-paddingleft="[0,0,0,0]"
-														style={{
-															zIndex: 8,
-															whiteSpace: 'nowrap',
-															fontSize: '70px',
-															lineHeight: '70px',
-															fontWeight: '700',
-															color: 'rgba(255,255,255,1)',
-															fontFamily: 'Montserrat',
-														}}
-													>
-														Education{' '}
-													</div>
-
-													<div
-														className="tp-caption   tp-resizeme"
-														id="slide-8-layer-5"
-														data-x="center"
-														data-hoffset=""
-														data-y="center"
-														data-voffset=""
-														data-width="['auto']"
-														data-height="['auto']"
-														data-visibility="['on','on','on','off']"
-														data-type="text"
-														data-responsive_offset="on"
-														data-frames='[{"from":"opacity:0;","speed":500,"to":"o:1;","delay":1000,"ease":"Power2.easeInOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"}]'
-														data-textAlign="['left','left','left','left']"
-														data-paddingtop="[0,0,0,0]"
-														data-paddingright="[0,0,0,0]"
-														data-paddingbottom="[0,0,0,0]"
-														data-paddingleft="[0,0,0,0]"
-														style={{
-															zIndex: 9,
-															whiteSpace: 'nowrap',
-															fontSize: '70px',
-															lineHeight: '70px',
-															fontWeight: '700',
-															color: 'rgba(255,255,255,1)',
-															fontFamily: 'Montserrat',
-														}}
-													>
-														Learning Courses{' '}
-													</div>
-
-													<div
-														className="tp-caption rev-btn  tp-resizeme"
-														id="slide-8-layer-6"
-														data-x="center"
-														data-hoffset="-90"
-														data-y="center"
-														data-voffset="120"
-														data-width="['auto']"
-														data-height="['auto']"
-														data-visibility="['on','on','on','off']"
-														data-type="button"
-														data-responsive_offset="on"
-														data-frames='[{"from":"opacity:0;","speed":500,"to":"o:1;","delay":1500,"ease":"Power2.easeInOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"},{"frame":"hover","speed":"200","ease":"Power0.easeIn","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgba(255,255,255,1);bg:rgba(23,72,115,1);bc:rgba(23,72,115,1);bw:2px 2px 2px 2px;"}]'
-														data-textAlign="['left','left','left','left']"
-														data-paddingtop="[12,12,12,12]"
-														data-paddingright="[35,35,35,35]"
-														data-paddingbottom="[12,12,12,12]"
-														data-paddingleft="[35,35,35,35]"
-														style={{
-															zIndex: 10,
-															whiteSpace: 'nowrap',
-															fontSize: '16px',
-															lineHeight: '16px',
-															fontWeight: '700',
-															color: 'rgba(255,255,255,1)',
-															fontFamily: 'Montserrat',
-															borderColor: 'rgba(255,255,255,1)',
-															borderStyle: 'solid',
-															borderWidth: '2px',
-															borderRadius: '3px 3px 3px 3px',
-															outline: 'none',
-															boxShadow: 'none',
-															boxSizing: 'border-box',
-															MozBoxSizing: 'border-box',
-															WebkitBoxSizing: 'border-box',
-															cursor: 'pointer',
-														}}
-													>
-														ABOUT US{' '}
-													</div>
-
-													<div
-														className="tp-caption rev-btn  tp-resizeme"
-														id="slide-8-layer-7"
-														data-x="center"
-														data-hoffset="90"
-														data-y="center"
-														data-voffset="120"
-														data-width="['auto']"
-														data-height="['auto']"
-														data-visibility="['on','on','on','off']"
-														data-type="button"
-														data-responsive_offset="on"
-														data-frames='[{"from":"opacity:0;","speed":500,"to":"o:1;","delay":1500,"ease":"Power2.easeInOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"},{"frame":"hover","speed":"200","ease":"Power0.easeIn","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgba(255,255,255,1);bg:transparent;bc:rgba(255,255,255,1);bw:2px 2px 2px 2px;"}]'
-														data-textAlign="['left','left','left','left']"
-														data-paddingtop="[12,12,12,12]"
-														data-paddingright="[35,35,35,35]"
-														data-paddingbottom="[12,12,12,12]"
-														data-paddingleft="[35,35,35,35]"
-														style={{
-															zIndex: 11,
-															whiteSpace: 'nowrap',
-															fontSize: '16px',
-															lineHeight: '16px',
-															fontWeight: '700',
-															color: 'rgba(255,255,255,1)',
-															fontfamily: 'Montserrat',
-															backgroundcolor: 'rgba(23,72,115,1)',
-															borderColor: 'rgba(23,72,115,1)',
-															borderStyle: 'solid',
-															borderWidth: '2px',
-															borderRadius: '3px 3px 3px 3px',
-															outline: 'none',
-															boxShadow: 'none',
-															boxSizing: 'border-box',
-															MozBoxSizing: 'border-box',
-															WebkitBoxSizing: 'border-box',
-															cursor: 'pointer',
-														}}
-													>
-														COURSES{' '}
-													</div>
-												</li>
-											</ul>
-
-											<div
-												className="tp-bannertimer tp-bottom"
-												style={{ visibility: 'hidden !important' }}
-											></div>
-										</div>
-									</div>
-								</div>
-							</div>
+				<div>
+					<div className="slideshow-container">
+						<div className="mySlides fade">
+							<img src={FirstBanner} style={{ width: '100%' }} />
 						</div>
+						<div className="mySlides fade">
+							<img src={SecondBanner} style={{ width: '100%' }} />
+						</div>
+						<div className="mySlides fade">
+							<img src={ThirdBanner} style={{ width: '100%' }} />
+						</div>
+						<a className="prev" onClick={() => plusSlides(-1)}>&#10094;</a>
+						<a className="next" onClick={() => plusSlides(1)}>&#10095;</a>
+					</div>
+					<br />
+					<div style={{ textAlign: 'center' }}>
+						<span className="dot" onClick={() => currentSlide(1)}></span>
+						<span className="dot" onClick={() => currentSlide(2)}></span>
+						<span className="dot" onClick={() => currentSlide(3)}></span>
 					</div>
 				</div>
 			</div>
@@ -1607,114 +1237,6 @@ export const Home = () => {
 				</div>
 			</div>
 
-			<div
-				data-vc-full-width="true"
-				data-vc-full-width-init="false"
-				className="vc_row wpb_row vc_row-fluid vc_custom_1467280971567 vc_row-has-fill"
-			>
-				<div className="wpb_column vc_column_container vc_col-sm-2">
-					<div className="vc_column-inner vc_custom_1467271134818">
-						<div className="wpb_wrapper">
-							<div
-								style={{ textAlign: 'center' }}
-								className="nd_options_section"
-							>
-								<img
-									alt=""
-									style={{ width: '100%' }}
-									className=" nd_options_margin_0 nd_options_padding_0 "
-									src="http://www.nicdarkthemes.com/themes/education/wp/demo/university/wp-content/uploads/sites/3/2016/06/food-logo1.png"
-								/>
-							</div>
-						</div>
-					</div>
 				</div>
-				<div className="wpb_column vc_column_container vc_col-sm-2">
-					<div className="vc_column-inner vc_custom_1467271143019">
-						<div className="wpb_wrapper">
-							<div
-								style={{ textAlign: 'center' }}
-								className="nd_options_section"
-							>
-								<img
-									alt=""
-									style={{ width: '100%' }}
-									className=" nd_options_margin_0 nd_options_padding_0 "
-									src="http://www.nicdarkthemes.com/themes/education/wp/demo/university/wp-content/uploads/sites/3/2016/06/food-logo2.png"
-								/>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div className="wpb_column vc_column_container vc_col-sm-2">
-					<div className="vc_column-inner vc_custom_1467271150084">
-						<div className="wpb_wrapper">
-							<div
-								style={{ textAlign: 'center' }}
-								className="nd_options_section"
-							>
-								<img
-									alt=""
-									style={{ width: '100%' }}
-									className=" nd_options_margin_0 nd_options_padding_0 "
-									src="http://www.nicdarkthemes.com/themes/education/wp/demo/university/wp-content/uploads/sites/3/2016/06/food-logo3.png"
-								/>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div className="wpb_column vc_column_container vc_col-sm-2">
-					<div className="vc_column-inner vc_custom_1467271159725">
-						<div className="wpb_wrapper">
-							<div
-								style={{ textAlign: 'center' }}
-								className="nd_options_section"
-							>
-								<img
-									alt=""
-									style={{ width: '100%' }}
-									className=" nd_options_margin_0 nd_options_padding_0 "
-									src="http://www.nicdarkthemes.com/themes/education/wp/demo/university/wp-content/uploads/sites/3/2016/06/food-logo4.png"
-								/>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div className="wpb_column vc_column_container vc_col-sm-2">
-					<div className="vc_column-inner vc_custom_1467271168220">
-						<div className="wpb_wrapper">
-							<div
-								style={{ textAlign: 'center' }}
-								className="nd_options_section"
-							>
-								<img
-									alt=""
-									style={{ width: '100%' }}
-									className=" nd_options_margin_0 nd_options_padding_0 "
-									src="http://www.nicdarkthemes.com/themes/education/wp/demo/university/wp-content/uploads/sites/3/2016/06/food-logo5.png"
-								/>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div className="wpb_column vc_column_container vc_col-sm-2">
-					<div className="vc_column-inner vc_custom_1467271192396">
-						<div className="wpb_wrapper">
-							<div
-								style={{ textAlign: 'center' }}
-								className="nd_options_section"
-							>
-								<img
-									alt=""
-									style={{ width: '100%' }}
-									className=" nd_options_margin_0 nd_options_padding_0 "
-									src="http://www.nicdarkthemes.com/themes/education/wp/demo/university/wp-content/uploads/sites/3/2016/06/food-logo6.png"
-								/>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
 	);
 };

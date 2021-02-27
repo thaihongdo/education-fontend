@@ -10,6 +10,7 @@ export const SubMenu = (props) => {
 				</Link>
 			</li> */}
 			{props.items.map((item) => {
+				console.log('item',item)
 				return (
 					<li
 						className={`menu-item menu-item-type-post_type menu-item-object-page ${
