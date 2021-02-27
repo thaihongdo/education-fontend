@@ -1,18 +1,8 @@
-import React from 'react';
+import React from "react";
 
 export const Tool = () => {
 	return (
 		<>
-			<div className="nd_tds_display_none_responsive nd_tds_dialog_open_content_dialog nd_tds_cursor_pointer nd_tds_right_30 nd_tds_bottom_30 nd_tds_position_fixed nd_tds_z_index_999">
-				<a className="nd_tds_text_align_center nd_tds_width_65 nd_tds_float_left nd_tds_height_65 nd_tds_font_weight_bold nd_tds_display_table nd_tds_font_size_25 nd_tds_line_height_25 nd_tds_color_fff_important nd_tds_border_radius_100_percentage nd_tds_background_color_3 nd_tds_box_shadow_0_0_20_000_015 nd_tds_font_family_montserrat_important">
-					<img
-						width="25px"
-						height="25px"
-						className="nd_tds_animation_rotate nd_tds_float_left nd_tds_position_absolute nd_tds_top_20 nd_tds_left_20"
-						src="http://www.nicdarkthemes.com/themes/education/wp/demo/university/wp-content/plugins/nd-theme-demos-switcher/addons/dialog/img/settings.svg"
-					/>
-				</a>
-			</div>
 			<div
 				className="nd_tds_display_none_responsive nd_tds_display_none"
 				id="nd_tds_dialog_content_dialog"
@@ -172,35 +162,6 @@ export const Tool = () => {
 						<div className="nd_tds_section nd_tds_height_40"></div>
 					</div>
 				</div>
-			</div>
-
-			<div className="nd_tds_display_none_responsive nd_tds_right_125 nd_tds_bottom_30 nd_tds_position_fixed nd_tds_z_index_999">
-				<a
-					href="https://1.envato.market/53YOn"
-					target
-					className="nd_tds_text_align_center nd_tds_width_65 nd_tds_float_left nd_tds_height_65 nd_tds_font_weight_bold nd_tds_display_table nd_tds_font_size_25 nd_tds_line_height_25 nd_tds_color_fff_important nd_tds_border_radius_100_percentage nd_tds_background_color_1 nd_tds_box_shadow_0_0_20_000_015 nd_tds_font_family_montserrat_important"
-				>
-					<span className="nd_tds_position_absolute nd_tds_top_22 nd_tds_left_13 nd_tds_font_size_8 nd_tds_line_height_8">
-						$
-					</span>
-					<span className="nd_tds_display_table_cell nd_tds_vertical_align_middle nd_tds_padding_left_5">
-						54
-					</span>
-				</a>
-			</div>
-
-			<div className="nd_tds_display_none_responsive nd_tds_right_175 nd_tds_bottom_30 nd_tds_position_fixed nd_tds_z_index_999">
-				<a
-					target
-					className="nd_tds_border_radius_100_percentage nd_tds_width_35 nd_tds_height_35 nd_tds_float_left nd_tds_background_color_2 nd_tds_box_shadow_0_0_20_000_015"
-					href="https://1.envato.market/53YOn"
-				>
-					<img
-						className="nd_tds_position_absolute nd_tds_left_10 nd_tds_top_10"
-						width="15px"
-						src="http://www.nicdarkthemes.com/themes/education/wp/demo/university/wp-content/plugins/nd-theme-demos-switcher/addons/fixed-img/img/envato.png"
-					/>
-				</a>
 			</div>
 		</>
 	);

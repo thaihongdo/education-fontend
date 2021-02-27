@@ -1,5 +1,5 @@
-import { http } from '../../utils';
-import { URLs } from '../../constants';
+import { http } from "../../utils";
+import { URLs } from "../../constants";
 
 export const SigninService = {
 	async signin(data) {

@@ -111,9 +111,9 @@ export const Header = () => {
 													</Link>
 													<SubMenu
 														items={[
-															{ to: '/home1', label: 'Home 1' },
-															{ to: '/home2', label: 'Home 2' },
-															{ to: '/home3', label: 'Home 3' },
+															{ to: '/gioi-thieu', label: 'Giới thiệu' },
+															{ to: '/doi-tac', label: 'Đối tác' },
+															{ to: '/cam-nhan-hoc-vien', label: 'Cảm nhận học viên' },
 														]}
 													/>
 												</li>
@@ -123,27 +123,27 @@ export const Header = () => {
 													</Link>
 													<SubMenu
 														items={[
-															{ to: '/home3', label: 'Search' },
-															{
-																to: '/home2',
-																label: 'Single Course',
-																childrens: [
-																	{
-																		to: '/',
-																		label: 'Free Course',
-																	},
-																	{
-																		to: '/',
-																		label: 'Paid Course',
-																	},
-																	{
-																		to: '/',
-																		label: 'Completed Course',
-																	},
-																],
-															},
-															{ to: '/home3', label: 'Online Course' },
-															{ to: '/home3', label: 'Online Course' },
+															{ to: '/SME-dao-tao', label: 'SME đào tạo (public)' },
+															// {
+															// 	to: '/home2',
+															// 	label: 'Single Course',
+															// 	childrens: [
+															// 		{
+															// 			to: '/',
+															// 			label: 'Free Course',
+															// 		},
+															// 		{
+															// 			to: '/',
+															// 			label: 'Paid Course',
+															// 		},
+															// 		{
+															// 			to: '/',
+															// 			label: 'Completed Course',
+															// 		},
+															// 	],
+															// },
+															{ to: '/dao-tao-theo-yeu-cau', label: 'Đào tạo theo yêu cầu' },
+															{ to: '/dao-tao-online', label: 'Đào tạo online' },
 														]}
 													/>
 												</li>
@@ -154,13 +154,20 @@ export const Header = () => {
 													<Link to="#" aria-current="page"> QUẢN TRỊ </Link>
 													<SubMenu
 														items={[
-															{ to: '/tech', label: 'Công nghệ' },
-															
+															{ to: '/cong-nghe', label: 'Công nghệ' },
+															{ to: '/nhan-su', label: 'Nhân sự' },
+															{ to: '/tai-chinh', label: 'Tài chính' },															
 														]}
 													/>
 												</li>
 												<li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-803">
 													<Link to="/">SỰ KIỆN</Link>
+													<SubMenu
+														items={[
+															{ to: '/nhan-vat', label: 'Nhân vật' },
+															{ to: '/su-kien', label: 'Sự kiện' }															
+														]}
+													/>
 												</li>
 												<li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-814">
 													<Link to="/">THƯ VIỆN</Link>
