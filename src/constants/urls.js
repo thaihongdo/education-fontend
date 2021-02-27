@@ -1,0 +1,6 @@
+export const API_BASE = 'http://192.168.1.100:7171/local/api/v1';
+
+export const URLs = {
+  SIGN_IN: `${API_BASE}/auth/login`,
+  REGISTER: `${API_BASE}/auth/register`,
+};
