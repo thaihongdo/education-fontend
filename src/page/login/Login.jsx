@@ -6,10 +6,8 @@ import { SigninService } from '../../service';
 export const Login = () => {
 	const { register, handleSubmit, errors } = useForm();
 	const onLogin = (data) => {
-		console.log(data);
 		SigninService.signin(data)
 			.then((res) => {
-				console.log(res);
 				if (res?.success) {
 					toast.success(res.message);
 				} else {
