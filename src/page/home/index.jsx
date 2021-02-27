@@ -1,8 +1,8 @@
-import React, { useEffect } from 'react';
-import './styles.css';
-import FirstBanner from '../../assets/images/1-banner.jpg';
-import SecondBanner from '../../assets/images/1-banner(19).jpg';
-import ThirdBanner from '../../assets/images/mkt-banner.jpg';
+import React, { useEffect } from "react";
+import "./styles.css";
+import FirstBanner from "../../assets/images/1-banner.jpg";
+import SecondBanner from "../../assets/images/1-banner(19).jpg";
+import ThirdBanner from "../../assets/images/mkt-banner.jpg";
 export const Home = () => {
 	let slideIndex = 1;
 
@@ -12,7 +12,7 @@ export const Home = () => {
 
 	function plusSlides(n) {
 		showSlides((slideIndex += n));
-		console.log('+');
+		console.log("+");
 	}
 
 	function currentSlide(n) {
@@ -21,9 +21,9 @@ export const Home = () => {
 
 	function showSlides(n) {
 		let i;
-		let slides = document.getElementsByClassName('mySlides');
-		console.log('slide', slides);
-		const dots = document.getElementsByClassName('dot');
+		let slides = document.getElementsByClassName("mySlides");
+		console.log("slide", slides);
+		const dots = document.getElementsByClassName("dot");
 		if (n > slides.length) {
 			slideIndex = 1;
 		}
@@ -31,34 +31,34 @@ export const Home = () => {
 			slideIndex = slides.length;
 		}
 		for (i = 0; i < slides.length; i++) {
-			slides[i].style.display = 'none';
+			slides[i].style.display = "none";
 		}
 		for (i = 0; i < dots.length; i++) {
-			dots[i].className = dots[i].className.replace(' active', '');
+			dots[i].className = dots[i].className.replace(" active", "");
 		}
 		if (slides.length > 0) {
-			slides[slideIndex - 1].style.display = 'block';
-			dots[slideIndex - 1].className += ' active';
+			slides[slideIndex - 1].style.display = "block";
+			dots[slideIndex - 1].className += " active";
 		}
 	}
 
 	return (
 		<div className="nd_options_container nd_options_padding_0_15 nd_options_box_sizing_border_box nd_options_clearfix">
 			<div
-				style={{ float: 'left', width: '100%' }}
+				style={{ float: "left", width: "100%" }}
 				id="post-204"
 				className="post-204 page type-page status-publish hentry"
 			>
 				<div>
 					<div className="slideshow-container">
 						<div className="mySlides fade">
-							<img src={FirstBanner} style={{ width: '100%' }} />
+							<img src={FirstBanner} style={{ width: "100%" }} />
 						</div>
 						<div className="mySlides fade">
-							<img src={SecondBanner} style={{ width: '100%' }} />
+							<img src={SecondBanner} style={{ width: "100%" }} />
 						</div>
 						<div className="mySlides fade">
-							<img src={ThirdBanner} style={{ width: '100%' }} />
+							<img src={ThirdBanner} style={{ width: "100%" }} />
 						</div>
 						<a className="prev" onClick={() => plusSlides(-1)}>
 							&#10094;
@@ -68,7 +68,7 @@ export const Home = () => {
 						</a>
 					</div>
 					<br />
-					<div style={{ textAlign: 'center' }}>
+					<div style={{ textAlign: "center" }}>
 						<span className="dot" onClick={() => currentSlide(1)}></span>
 						<span className="dot" onClick={() => currentSlide(2)}></span>
 						<span className="dot" onClick={() => currentSlide(3)}></span>
@@ -188,7 +188,7 @@ export const Home = () => {
 									<div className="nd_learning_section nd_learning_padding_20 nd_learning_box_sizing_border_box nd_learning_bg_grey nd_learning_border_bottom_1_solid_grey nd_learning_text_align_center">
 										<h6
 											style={{
-												backgroundColor: '#90cbde',
+												backgroundColor: "#90cbde",
 											}}
 											className="nd_options_second_font nd_learning_padding_5 nd_learning_border_radius_3 nd_learning_color_white_important nd_learning_display_inline_block"
 										>
@@ -332,7 +332,7 @@ export const Home = () => {
 
 										<div className="nd_learning_bg_greydark_alpha_5 nd_learning_position_absolute nd_learning_left_0 nd_learning_height_100_percentage nd_learning_width_100_percentage nd_learning_padding_30 nd_learning_box_sizing_border_box">
 											<a
-												style={{ backgroundColor: '#90cbde' }}
+												style={{ backgroundColor: "#90cbde" }}
 												className="nd_learning_position_absolute nd_learning_top_20 nd_learning_right_20 nd_learning_display_inline_block nd_learning_color_white_important nd_options_first_font nd_learning_padding_8 nd_learning_border_radius_3 nd_learning_font_size_13"
 												href="http://www.nicdarkthemes.com/themes/education/wp/demo/university/courses/philosophy/"
 											>
@@ -353,35 +353,35 @@ export const Home = () => {
 													<div className="nd_learning_section ">
 														<img
 															alt=""
-															style={{ margin: '2px' }}
+															style={{ margin: "2px" }}
 															width="15"
 															height="15"
 															src="http://www.nicdarkthemes.com/themes/education/wp/demo/university/wp-content/plugins/nd-learning/assets/img/icons/icon-star-full-white.svg"
 														/>
 														<img
 															alt=""
-															style={{ margin: '2px' }}
+															style={{ margin: "2px" }}
 															width="15"
 															height="15"
 															src="http://www.nicdarkthemes.com/themes/education/wp/demo/university/wp-content/plugins/nd-learning/assets/img/icons/icon-star-full-white.svg"
 														/>
 														<img
 															alt=""
-															style={{ margin: '2px' }}
+															style={{ margin: "2px" }}
 															width="15"
 															height="15"
 															src="http://www.nicdarkthemes.com/themes/education/wp/demo/university/wp-content/plugins/nd-learning/assets/img/icons/icon-star-full-white.svg"
 														/>
 														<img
 															alt=""
-															style={{ margin: '2px' }}
+															style={{ margin: "2px" }}
 															width="15"
 															height="15"
 															src="http://www.nicdarkthemes.com/themes/education/wp/demo/university/wp-content/plugins/nd-learning/assets/img/icons/icon-star-full-white.svg"
 														/>
 														<img
 															alt=""
-															style={{ margin: '2px' }}
+															style={{ margin: "2px" }}
 															width="15"
 															height="15"
 															src="http://www.nicdarkthemes.com/themes/education/wp/demo/university/wp-content/plugins/nd-learning/assets/img/icons/icon-star-half-white.svg"
@@ -403,7 +403,7 @@ export const Home = () => {
 
 										<div className="nd_learning_bg_greydark_alpha_5 nd_learning_position_absolute nd_learning_left_0 nd_learning_height_100_percentage nd_learning_width_100_percentage nd_learning_padding_30 nd_learning_box_sizing_border_box">
 											<a
-												style={{ backgroundColor: '#90cbde' }}
+												style={{ backgroundColor: "#90cbde" }}
 												className="nd_learning_position_absolute nd_learning_top_20 nd_learning_right_20 nd_learning_display_inline_block nd_learning_color_white_important nd_options_first_font nd_learning_padding_8 nd_learning_border_radius_3 nd_learning_font_size_13"
 												href="http://www.nicdarkthemes.com/themes/education/wp/demo/university/courses/contemporary-art/"
 											>
@@ -424,35 +424,35 @@ export const Home = () => {
 													<div className="nd_learning_section ">
 														<img
 															alt=""
-															style={{ margin: '2px' }}
+															style={{ margin: "2px" }}
 															width="15"
 															height="15"
 															src="http://www.nicdarkthemes.com/themes/education/wp/demo/university/wp-content/plugins/nd-learning/assets/img/icons/icon-star-full-white.svg"
 														/>
 														<img
 															alt=""
-															style={{ margin: '2px' }}
+															style={{ margin: "2px" }}
 															width="15"
 															height="15"
 															src="http://www.nicdarkthemes.com/themes/education/wp/demo/university/wp-content/plugins/nd-learning/assets/img/icons/icon-star-full-white.svg"
 														/>
 														<img
 															alt=""
-															style={{ margin: '2px' }}
+															style={{ margin: "2px" }}
 															width="15"
 															height="15"
 															src="http://www.nicdarkthemes.com/themes/education/wp/demo/university/wp-content/plugins/nd-learning/assets/img/icons/icon-star-full-white.svg"
 														/>
 														<img
 															alt=""
-															style={{ margin: '2px' }}
+															style={{ margin: "2px" }}
 															width="15"
 															height="15"
 															src="http://www.nicdarkthemes.com/themes/education/wp/demo/university/wp-content/plugins/nd-learning/assets/img/icons/icon-star-full-white.svg"
 														/>
 														<img
 															alt=""
-															style={{ margin: '2px' }}
+															style={{ margin: "2px" }}
 															width="15"
 															height="15"
 															src="http://www.nicdarkthemes.com/themes/education/wp/demo/university/wp-content/plugins/nd-learning/assets/img/icons/icon-star-half-white.svg"
@@ -480,22 +480,22 @@ export const Home = () => {
 						<div className="wpb_wrapper">
 							<h2
 								style={{
-									color: '#ffffff',
-									fontSize: '50px',
-									lineHeight: '50px',
-									fontWeight: 'bold',
+									color: "#ffffff",
+									fontSize: "50px",
+									lineHeight: "50px",
+									fontWeight: "bold",
 								}}
 								className=" nd_options_first_font "
 							>
 								Our Courses
 							</h2>
-							<div style={{ height: '10px' }} className="nicdark_section"></div>
+							<div style={{ height: "10px" }} className="nicdark_section"></div>
 							<h3
 								style={{
-									color: '#ffffff',
-									fontSize: '20px',
-									lineHeight: '20px',
-									fontWeight: 'normal',
+									color: "#ffffff",
+									fontSize: "20px",
+									lineHeight: "20px",
+									fontWeight: "normal",
 								}}
 								className=" nd_options_first_font "
 							>
@@ -592,7 +592,7 @@ export const Home = () => {
 
 																<div className="nd_learning_width_50_percentage nd_learning_width_100_percentage_all_iphone nd_learning_float_left nd_learning_text_align_right">
 																	<a
-																		style={{ backgroundColor: '#90cbde' }}
+																		style={{ backgroundColor: "#90cbde" }}
 																		className="nd_learning_width_100_percentage_all_iphone nd_learning_box_sizing_border_box nd_learning_text_align_center_all_iphone nd_learning_display_inline_block nd_learning_color_white_important nd_options_first_font nd_learning_padding_8 nd_learning_border_radius_3 nd_learning_font_size_13"
 																		href="http://www.nicdarkthemes.com/themes/education/wp/demo/university/courses/philosophy/"
 																	>
@@ -690,7 +690,7 @@ export const Home = () => {
 
 																<div className="nd_learning_width_50_percentage nd_learning_width_100_percentage_all_iphone nd_learning_float_left nd_learning_text_align_right">
 																	<a
-																		style={{ backgroundColor: '#90cbde' }}
+																		style={{ backgroundColor: "#90cbde" }}
 																		className="nd_learning_width_100_percentage_all_iphone nd_learning_box_sizing_border_box nd_learning_text_align_center_all_iphone nd_learning_display_inline_block nd_learning_color_white_important nd_options_first_font nd_learning_padding_8 nd_learning_border_radius_3 nd_learning_font_size_13"
 																		href="http://www.nicdarkthemes.com/themes/education/wp/demo/university/courses/contemporary-art/"
 																	>
@@ -787,7 +787,7 @@ export const Home = () => {
 
 																<div className="nd_learning_width_50_percentage nd_learning_width_100_percentage_all_iphone nd_learning_float_left nd_learning_text_align_right">
 																	<a
-																		style={{ backgroundColor: '#90cbde' }}
+																		style={{ backgroundColor: "#90cbde" }}
 																		className="nd_learning_width_100_percentage_all_iphone nd_learning_box_sizing_border_box nd_learning_text_align_center_all_iphone nd_learning_display_inline_block nd_learning_color_white_important nd_options_first_font nd_learning_padding_8 nd_learning_border_radius_3 nd_learning_font_size_13"
 																		href="http://www.nicdarkthemes.com/themes/education/wp/demo/university/courses/geometry-course/"
 																	>
@@ -811,35 +811,35 @@ export const Home = () => {
 					<div className="wpb_column vc_column_container vc_col-sm-12">
 						<div className="vc_column-inner ">
 							<div className="wpb_wrapper">
-								{' '}
+								{" "}
 								<h2
 									style={{
-										color: '#727475',
-										fontSize: '50px',
-										lineHeight: '50px',
-										fontWeight: 'bold',
+										color: "#727475",
+										fontSize: "50px",
+										lineHeight: "50px",
+										fontWeight: "bold",
 									}}
 									className=" nd_options_first_font "
 								>
 									Our Teachers
-								</h2>{' '}
+								</h2>{" "}
 								<div
-									style={{ height: '10px' }}
+									style={{ height: "10px" }}
 									className="nicdark_section"
-								></div>{' '}
+								></div>{" "}
 								<h3
 									style={{
-										color: '#a3a3a3',
-										fontSize: '20px',
-										lineHeight: '20px',
-										fontWeight: 'normal',
+										color: "#a3a3a3",
+										fontSize: "20px",
+										lineHeight: "20px",
+										fontWeight: "normal",
 									}}
 									className=" nd_options_first_font "
 								>
 									Best Chef In Our School
-								</h3>{' '}
+								</h3>{" "}
 								<div
-									style={{ height: '30px' }}
+									style={{ height: "30px" }}
 									className="nicdark_section"
 								></div>
 							</div>
@@ -870,22 +870,22 @@ export const Home = () => {
 						<div className="wpb_wrapper">
 							<h2
 								style={{
-									color: '#727475',
-									fontSize: '50px',
-									lineHeight: '50px',
-									fontWeight: 'bold',
+									color: "#727475",
+									fontSize: "50px",
+									lineHeight: "50px",
+									fontWeight: "bold",
 								}}
 								className=" nd_options_first_font "
 							>
 								Our Blog
 							</h2>
-							<div style={{ height: '10px' }} className="nicdark_section"></div>
+							<div style={{ height: "10px" }} className="nicdark_section"></div>
 							<h3
 								style={{
-									color: '#a3a3a3',
-									fontSize: '20px',
-									lineHeight: '20px',
-									fontWeight: 'normal',
+									color: "#a3a3a3",
+									fontSize: "20px",
+									lineHeight: "20px",
+									fontWeight: "normal",
 								}}
 								className=" nd_options_first_font "
 							>
@@ -936,7 +936,7 @@ export const Home = () => {
 											</p>
 											<div className="nd_options_section nd_options_height_20"></div>
 											<a
-												style={{ backgroundColor: '#174873' }}
+												style={{ backgroundColor: "#174873" }}
 												className="nd_options_display_inline_block nd_options_line_height_16 nd_options_text_align_center nd_options_box_sizing_border_box  nd_options_color_white nd_options_first_font nd_options_padding_10_20 nd_options_border_radius_3 "
 												href="http://www.nicdarkthemes.com/themes/education/wp/demo/university/new-website/"
 											>
@@ -984,7 +984,7 @@ export const Home = () => {
 
 								<div className=" nd_options_width_33_percentage nd_options_float_left nd_options_padding_15 nd_options_box_sizing_border_box nd_options_masonry_item nd_options_width_100_percentage_responsive">
 									<div
-										style={{ backgroundColor: '#90cbde' }}
+										style={{ backgroundColor: "#90cbde" }}
 										className="nd_options_section nd_options_text_align_center nd_options_padding_50 nd_options_box_sizing_border_box"
 									>
 										<h2 className="nd_options_color_white nd_options_line_height_35">
@@ -1027,7 +1027,7 @@ export const Home = () => {
 											</a>
 
 											<a
-												style={{ backgroundColor: '#174873' }}
+												style={{ backgroundColor: "#174873" }}
 												className="nd_options_position_absolute nd_options_right_20 nd_options_top_20 nd_options_display_inline_block nd_options_color_white nd_options_first_font nd_options_padding_8 nd_options_border_radius_3 nd_options_font_size_13 nd_options_z_index_9 nd_options_text_transform_uppercase"
 												href="http://www.nicdarkthemes.com/themes/education/wp/demo/university/our-students/"
 											>
@@ -1104,11 +1104,11 @@ export const Home = () => {
 											</h2>
 											<div className="nd_options_section nd_options_height_20"></div>
 											<p className="nd_options_margin_0_important nd_options_padding_0">
-												Lorem ipsum dolor sit amet, consectetur adipiscing elit.{' '}
+												Lorem ipsum dolor sit amet, consectetur adipiscing elit.{" "}
 											</p>
 											<div className="nd_options_section nd_options_height_20"></div>
 											<a
-												style={{ backgroundColor: '#174873' }}
+												style={{ backgroundColor: "#174873" }}
 												className="nd_options_display_inline_block nd_options_line_height_16 nd_options_text_align_center nd_options_box_sizing_border_box  nd_options_color_white nd_options_first_font nd_options_padding_10_20 nd_options_border_radius_3 "
 												href="http://www.nicdarkthemes.com/themes/education/wp/demo/university/course-registration/"
 											>
@@ -1166,7 +1166,7 @@ export const Home = () => {
 											</a>
 
 											<a
-												style={{ backgroundColor: '#174873' }}
+												style={{ backgroundColor: "#174873" }}
 												className="nd_options_position_absolute nd_options_right_20 nd_options_top_20 nd_options_display_inline_block nd_options_color_white nd_options_first_font nd_options_padding_8 nd_options_border_radius_3 nd_options_font_size_13 nd_options_z_index_9 nd_options_text_transform_uppercase"
 												href="http://www.nicdarkthemes.com/themes/education/wp/demo/university/our-library/"
 											>
@@ -1214,7 +1214,7 @@ export const Home = () => {
 
 								<div className=" nd_options_width_33_percentage nd_options_float_left nd_options_padding_15 nd_options_box_sizing_border_box nd_options_masonry_item nd_options_width_100_percentage_responsive">
 									<div
-										style={{ backgroundColor: '#174873' }}
+										style={{ backgroundColor: "#174873" }}
 										className="nd_options_section nd_options_text_align_center nd_options_padding_50 nd_options_box_sizing_border_box"
 									>
 										<div className="nd_options_display_inline_block">
