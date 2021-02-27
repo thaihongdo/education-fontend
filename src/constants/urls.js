@@ -1,4 +1,4 @@
-export const API_BASE = 'http://192.168.1.100:7171/local/api/v1';
+export const API_BASE = "http://localhost:7171/local/api/v1";
 
 export const URLs = {
   SIGN_IN: `${API_BASE}/auth/login`,
