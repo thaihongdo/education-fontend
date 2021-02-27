@@ -89,12 +89,12 @@ export const Footer = () => {
 				>
 					<div className="grid nd_options_grid_6 nd_options_text_align_center_responsive">
 						<p className="nd_options_font_size_14" style={{ color: '#a3a3a3' }}>
-							© Copyright 2016 CleanThemes.net - University Theme
+							© Copyright 2016 SME - EDUCATION
 						</p>
 					</div>
 					<div className="grid nd_options_grid_6 nd_options_text_align_right nd_options_text_align_center_responsive">
 						<p className="nd_options_font_size_14" style={{ color: '#a3a3a3' }}>
-							Wonderful Education WP Theme
+							
 						</p>
 					</div>
 				</div>
