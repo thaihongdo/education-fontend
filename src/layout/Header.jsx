@@ -10,145 +10,8 @@ export const Header = () => {
 					style={{ backgroundColor: '#174873' }}
 					className="nd_options_section"
 				>
-					<div className="nd_options_container nd_options_clearfix">
-						<div
-							style={{ color: ' #ffffff' }}
-							className="nd_options_grid_6 nd_options_padding_botttom_10 nd_options_padding_bottom_0_responsive nd_options_padding_top_10 nd_options_text_align_center_responsive"
-						>
-							<div
-								id="nd_options_navigation_top_header_2_left"
-								className="nd_options_navigation_top_header_2 nd_options_display_inline_block_responsive"
-							>
-								<div className=" nd_options_display_none_all_iphone nd_options_display_table nd_options_float_left">
-									<div className="nd_options_display_table_cell nd_options_vertical_align_middle    ">
-										<a href="">
-											<img
-												alt=""
-												width="15"
-												height="15"
-												className="nd_options_margin_right_10 nd_options_float_left"
-												src="http://www.nicdarkthemes.com/themes/education/wp/demo/university/wp-content/plugins/nd-shortcodes/addons/customizer/shortcodes/top-header/img/world-white.svg"
-											/>
-										</a>
-									</div>
-
-									<div className="nd_options_display_table_cell nd_options_vertical_align_middle    ">
-										<a
-											style={{ color: ' #fff' }}
-											className="nd_options_margin_right_20"
-											href=""
-										>
-											LANGUAGES
-										</a>
-									</div>
-								</div>
-
-								<div className="  nd_options_display_table nd_options_float_left">
-									<div className="nd_options_display_table_cell nd_options_vertical_align_middle    ">
-										<a
-											style={{ color: ' #fff' }}
-											className="nd_options_margin_right_20"
-											href=""
-										>
-											EN
-										</a>
-									</div>
-								</div>
-
-								<div className="  nd_options_display_table nd_options_float_left">
-									<div className="nd_options_display_table_cell nd_options_vertical_align_middle    ">
-										<a
-											style={{ color: ' #fff' }}
-											className="nd_options_margin_right_20"
-											href=""
-										>
-											ES
-										</a>
-									</div>
-								</div>
-
-								<div className=" nd_options_display_none_all_iphone nd_options_display_table nd_options_float_left">
-									<div className="nd_options_display_table_cell nd_options_vertical_align_middle    ">
-										<a href="">
-											<img
-												alt=""
-												width="15"
-												height="15"
-												className="nd_options_margin_right_10 nd_options_float_left"
-												src="http://www.nicdarkthemes.com/themes/education/wp/demo/university/wp-content/plugins/nd-shortcodes/addons/customizer/shortcodes/top-header/img/share-white.svg"
-											/>
-										</a>
-									</div>
-
-									<div className="nd_options_display_table_cell nd_options_vertical_align_middle    ">
-										<a
-											style={{ color: ' #fff' }}
-											className="nd_options_margin_right_20"
-											href=""
-										>
-											OUR SOCIAL
-										</a>
-									</div>
-								</div>
-
-								<div className="  nd_options_display_table nd_options_float_left">
-									<div className="nd_options_display_table_cell nd_options_vertical_align_middle    ">
-										<a href="">
-											<img
-												alt=""
-												width="15"
-												height="15"
-												className="nd_options_margin_right_10 nd_options_float_left"
-												src="http://www.nicdarkthemes.com/themes/education/wp/demo/university/wp-content/plugins/nd-shortcodes/addons/customizer/shortcodes/top-header/img/facebook-white.svg"
-											/>
-										</a>
-									</div>
-								</div>
-
-								<div className="  nd_options_display_table nd_options_float_left">
-									<div className="nd_options_display_table_cell nd_options_vertical_align_middle    ">
-										<a href="">
-											<img
-												alt=""
-												width="15"
-												height="15"
-												className="nd_options_margin_right_10 nd_options_float_left"
-												src="http://www.nicdarkthemes.com/themes/education/wp/demo/university/wp-content/plugins/nd-shortcodes/addons/customizer/shortcodes/top-header/img/twitter-white.svg"
-											/>
-										</a>
-									</div>
-								</div>
-
-								<div className="  nd_options_display_table nd_options_float_left">
-									<div className="nd_options_display_table_cell nd_options_vertical_align_middle    ">
-										<a href="">
-											<img
-												alt=""
-												width="15"
-												height="15"
-												className="nd_options_margin_right_10 nd_options_float_left"
-												src="http://www.nicdarkthemes.com/themes/education/wp/demo/university/wp-content/plugins/nd-shortcodes/addons/customizer/shortcodes/top-header/img/linkedin-white.svg"
-											/>
-										</a>
-									</div>
-								</div>
-
-								<div className="  nd_options_display_table nd_options_float_left">
-									<div className="nd_options_display_table_cell nd_options_vertical_align_middle    ">
-										<a href="">
-											<img
-												alt=""
-												width="15"
-												height="15"
-												className="nd_options_margin_right_10 nd_options_float_left"
-												src="http://www.nicdarkthemes.com/themes/education/wp/demo/university/wp-content/plugins/nd-shortcodes/addons/customizer/shortcodes/top-header/img/pinterest-white.svg"
-											/>
-										</a>
-									</div>
-								</div>
-							</div>
-						</div>
-
+					<div className="nd_options_container nd_options_clearfix" style={{display: 'flex',justifyContent:'flex-end'}}>
+						
 						<div
 							style={{ color: '#ffffff' }}
 							className="nd_options_grid_6 nd_options_text_align_right nd_options_text_align_center_responsive nd_options_padding_top_0_responsive nd_options_padding_botttom_10 nd_options_padding_top_10"
@@ -176,7 +39,7 @@ export const Header = () => {
 											className="nd_options_margin_left_10"
 											to="/sign-in"
 										>
-											REGISTER
+											Đăng kí
 										</Link>
 									</div>
 								</div>
@@ -200,7 +63,7 @@ export const Header = () => {
 											className="nd_options_margin_left_10"
 											to="/sign-in"
 										>
-											LOGIN
+											Đăng nhập
 										</Link>
 									</div>
 								</div>
@@ -244,7 +107,7 @@ export const Header = () => {
 											<ul id="menu-main-menu-1" className="menu">
 												<li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-204 current_page_item current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-864">
 													<Link to="/" aria-current="page">
-														HOME
+														VỀ SME
 													</Link>
 													<SubMenu
 														items={[
@@ -256,11 +119,11 @@ export const Header = () => {
 												</li>
 												<li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-799">
 													<Link to="/" aria-current="page">
-														COURSES
+														ĐÀO TẠO
 													</Link>
 													<SubMenu
 														items={[
-															{ to: '/home1', label: 'Search' },
+															{ to: '/home3', label: 'Search' },
 															{
 																to: '/home2',
 																label: 'Single Course',
@@ -285,16 +148,22 @@ export const Header = () => {
 													/>
 												</li>
 												<li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-807">
-													<Link to="/">TEACHERS</Link>
+													<Link to="/">TƯ VẤN</Link>
 												</li>
 												<li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1142">
-													<Link to="#">SHOP</Link>
+													<Link to="#" aria-current="page"> QUẢN TRỊ </Link>
+													<SubMenu
+														items={[
+															{ to: '/tech', label: 'Công nghệ' },
+															
+														]}
+													/>
 												</li>
 												<li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-803">
-													<Link to="/">PAGES</Link>
+													<Link to="/">SỰ KIỆN</Link>
 												</li>
 												<li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-814">
-													<Link to="/">BLOG</Link>
+													<Link to="/">THƯ VIỆN</Link>
 												</li>
 												<li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-806">
 													<a to="/">CONTACT</a>
