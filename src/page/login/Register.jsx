@@ -1,6 +1,24 @@
 import React from 'react';
+import { useForm } from 'react-hook-form';
+import { toast } from 'react-toastify';
+import { RegisterService } from '../../service';
 
 export const Register = () => {
+	const { register, handleSubmit, errors } = useForm();
+	const onSignUp = (data) => {
+		RegisterService.register(data)
+			.then((res) => {
+				if (res?.success) {
+					toast.success(res.message);
+				} else {
+					toast.error(res?.message || 'Error occurred');
+				}
+			})
+			.catch((err) => {
+				toast.error(err?.message || err);
+			});
+	};
+
 	return (
 		<div className="nd_learning_width_50_percentage nd_learning_float_left nd_learning_box_sizing_border_box nd_learning_padding_15 nd_learning_width_100_percentage_responsive">
 			<div className=" nd_learning_section nd_learning_bg_white nd_learning_border_radius_3 nd_learning_border_1_solid_grey nd_learning_padding_20 nd_learning_box_sizing_border_box">
@@ -12,17 +30,18 @@ export const Register = () => {
 					<strong>Registration Disabled</strong>
 				</h2>
 
-				<form action="#" method="post">
+				<form onSubmit={handleSubmit(onSignUp)}>
 					<p>
 						<label className="nd_learning_section nd_learning_margin_top_20">
 							Email *
 						</label>
 						<input
 							type="text"
-							name="nd_learning_email"
 							className=" nd_learning_section"
-							value=""
+							name="email"
+							ref={register({ required: true })}
 						/>
+						{errors.email && 'Email is required'}
 					</p>
 					<p>
 						<label className="nd_learning_section nd_learning_margin_top_20">
@@ -30,10 +49,11 @@ export const Register = () => {
 						</label>
 						<input
 							type="password"
-							name="nd_learning_password"
 							className=" nd_learning_section"
-							value=""
+							name="password"
+							ref={register({ required: true })}
 						/>
+						{errors.password && 'Password is required'}
 					</p>
 
 					<p>
@@ -42,10 +62,11 @@ export const Register = () => {
 						</label>
 						<input
 							type="text"
-							name="nd_learning_first_name"
 							className="nd_learning_section"
-							value=""
+							name="first_name"
+							ref={register({ required: true })}
 						/>
+						{errors.first_name && 'First name is required'}
 					</p>
 					<p>
 						<label className="nd_learning_section nd_learning_margin_top_20">
@@ -53,10 +74,11 @@ export const Register = () => {
 						</label>
 						<input
 							type="text"
-							name="nd_learning_last_name"
 							className="nd_learning_section"
-							value=""
+							name="last_name"
+							ref={register({ required: true })}
 						/>
+						{errors.last_name && 'Last name is required'}
 					</p>
 					<p>
 						<label className="nd_learning_section nd_learning_margin_top_20">
@@ -64,9 +86,9 @@ export const Register = () => {
 						</label>
 						<input
 							type="text"
-							name="nd_learning_last_name"
+							name="phone"
 							className="nd_learning_section"
-							value=""
+							ref={register}
 						/>
 					</p>
 					<input
