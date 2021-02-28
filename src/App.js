@@ -1,13 +1,13 @@
-import "./App.css";
-import "./styles.css";
-import React, { Component } from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import { Home } from "./page/home";
-import { Footer, Header, Responsive, Tool } from "./layout";
-import { Home1 } from "./page/home1";
-import { Login } from "./page/login";
-import { Technology } from "./page/management/technology";
-import { TechnologyDetails } from "./page/management/technology/technology-details";
+import './App.css';
+import './styles.css';
+import React from 'react';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { Home } from './page/home';
+import { Footer, Header, Responsive, Tool } from './layout';
+import { Home1 } from './page/home1';
+import { Login } from './page/login';
+import { Technology } from './page/management/technology';
+import { TechnologyDetails } from './page/management/technology/technology-details';
 
 function App() {
 	return (
