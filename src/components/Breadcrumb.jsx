@@ -1,6 +1,8 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+import iconNextGrey from '../assets/images/icon-next-grey.svg';
 
-export const Breadcrumb = () => {
+export const Breadcrumb = (props) => {
 	return (
 		<div className="nd_options_section nd_options_bg_grey nd_options_border_bottom_1_solid_grey">
 			<div className="nd_options_container nd_options_clearfix">
@@ -13,13 +15,15 @@ export const Breadcrumb = () => {
 						className="nd_options_margin_left_10 nd_options_margin_right_10"
 						width="10"
 						height="10"
-						src="http://www.nicdarkthemes.com/themes/education/wp/demo/university/wp-content/plugins/nd-shortcodes/addons/breadcrumb/img/icon-next-grey.svg"
+						src={iconNextGrey}
 					/>{' '}
-					<span className="nd_learning_current_breadcrumb">
-						Learning Account
-					</span>
+					<span className="nd_learning_current_breadcrumb">{props.label}</span>
 				</div>
 			</div>
 		</div>
 	);
+};
+
+Breadcrumb.propTypes = {
+	label: PropTypes.string.isRequired,
 };
