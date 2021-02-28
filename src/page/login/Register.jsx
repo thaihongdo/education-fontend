@@ -1,9 +1,9 @@
-import React from 'react';
-import { useForm } from 'react-hook-form';
-import { toast } from 'react-toastify';
-import { RegisterService } from '../../service';
-import { LabelError } from '../../components';
-import { ButtonInfoStyled } from './styles';
+import React from "react";
+import { useForm } from "react-hook-form";
+import { toast } from "react-toastify";
+import { RegisterService } from "../../service";
+import { LabelError } from "../../components";
+import { ButtonInfoStyled } from "./styles";
 
 export const Register = () => {
 	const { register, handleSubmit, errors } = useForm();
@@ -11,9 +11,9 @@ export const Register = () => {
 		RegisterService.register(data)
 			.then((res) => {
 				if (res?.success) {
-					toast.success(res.message);
+					// toast.success(res.message);
 				} else {
-					toast.error(res?.message || 'Error occurred');
+					toast.error(res?.message || "Error occurred");
 				}
 			})
 			.catch((err) => {
