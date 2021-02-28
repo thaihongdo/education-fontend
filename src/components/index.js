@@ -1,1 +1,2 @@
-export * from "./SubMenu";
+export * from './SubMenu';
+export * from './LabelError';

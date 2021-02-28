@@ -2,6 +2,8 @@ import React from 'react';
 import { useForm } from 'react-hook-form';
 import { toast } from 'react-toastify';
 import { SigninService } from '../../service';
+import { LabelError } from '../../components';
+import { ButtonInfoStyled } from './styles';
 
 export const Login = () => {
 	const { register, handleSubmit, errors } = useForm();
@@ -23,11 +25,11 @@ export const Login = () => {
 		<div className="nd_learning_width_50_percentage nd_learning_float_left nd_learning_box_sizing_border_box nd_learning_padding_15 nd_learning_width_100_percentage_responsive">
 			<div className="nd_learning_section nd_learning_border_radius_3 nd_learning_border_1_solid_grey nd_learning_padding_20 nd_learning_box_sizing_border_box">
 				<h6 className="nd_options_second_font nd_learning_bg_green nd_learning_padding_5 nd_learning_border_radius_3 nd_learning_color_white_important nd_learning_display_inline_block">
-					ALREADY A MEMBER
+					Bạn đã là thành viên của SME
 				</h6>
 				<div className="nd_learning_section nd_learning_height_5"></div>
 				<h2>
-					<strong>Log In</strong>
+					<strong>Đăng nhập</strong>
 				</h2>
 
 				<form
@@ -45,10 +47,10 @@ export const Login = () => {
 							size="20"
 							ref={register({ required: true })}
 						/>
-						{errors.email && 'Email is required'}
+						{errors.email && <LabelError label="Email không được để trống" />}
 					</p>
 					<p className="login-password">
-						<label htmlFor="nd_learning_login_form_password">Password</label>
+						<label htmlFor="nd_learning_login_form_password">Mật khẩu</label>
 						<input
 							type="password"
 							name="password"
@@ -57,7 +59,9 @@ export const Login = () => {
 							size="20"
 							ref={register({ required: true })}
 						/>
-						{errors.password && 'Password is required'}
+						{errors.password && (
+							<LabelError label="Mật khẩu không được để trống" />
+						)}
 					</p>
 					<p className="login-remember">
 						<label>
@@ -71,18 +75,7 @@ export const Login = () => {
 						</label>
 					</p>
 					<p className="login-submit">
-						<input
-							type="submit"
-							name="wp-submit"
-							id="nd_learning_login_form_submit"
-							className="button button-primary"
-							value="Log In"
-						/>
-						<input
-							type="hidden"
-							name="redirect_to"
-							value="http://www.nicdarkthemes.com/themes/education/wp/demo/university/learning-account/"
-						/>
+						<ButtonInfoStyled type="submit">Log In</ButtonInfoStyled>
 					</p>
 				</form>
 			</div>
