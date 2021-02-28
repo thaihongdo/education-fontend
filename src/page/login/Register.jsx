@@ -12,6 +12,7 @@ export const Register = () => {
 			.then((res) => {
 				if (res?.success) {
 					// toast.success(res.message);
+					console.log("ok", res?.success);
 				} else {
 					toast.error(res?.message || "Error occurred");
 				}

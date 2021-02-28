@@ -12,6 +12,7 @@ export const Login = () => {
 			.then((res) => {
 				if (res?.success) {
 					// toast.success(res.message);
+					console.log("ok", res?.success);
 				} else {
 					toast.error(res?.message || "Error occurred");
 				}
