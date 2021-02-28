@@ -1,19 +1,21 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { SubMenu } from '../components';
-
+import React from "react";
+import { Link } from "react-router-dom";
+import { SubMenu } from "../components";
+import HeaderLogo from "../assets/images/SME.png";
 export const Header = () => {
 	return (
 		<>
 			<div className="nd_options_section">
 				<div
-					style={{ backgroundColor: '#174873' }}
+					style={{ backgroundColor: "#174873" }}
 					className="nd_options_section"
 				>
-					<div className="nd_options_container nd_options_clearfix" style={{display: 'flex',justifyContent:'flex-end'}}>
-						
+					<div
+						className="nd_options_container nd_options_clearfix"
+						style={{ display: "flex", justifyContent: "flex-end" }}
+					>
 						<div
-							style={{ color: '#ffffff' }}
+							style={{ color: "#ffffff" }}
 							className="nd_options_grid_6 nd_options_text_align_right nd_options_text_align_center_responsive nd_options_padding_top_0_responsive nd_options_padding_botttom_10 nd_options_padding_top_10"
 						>
 							<div
@@ -35,7 +37,7 @@ export const Header = () => {
 
 									<div className="nd_options_display_table_cell nd_options_vertical_align_middle    ">
 										<Link
-											style={{ color: ' #fff' }}
+											style={{ color: " #fff" }}
 											className="nd_options_margin_left_10"
 											to="/sign-in"
 										>
@@ -52,14 +54,16 @@ export const Header = () => {
 												width="15"
 												height="15"
 												className="nd_options_margin_left_20 nd_options_float_left"
-												src="http://www.nicdarkthemes.com/themes/education/wp/demo/university/wp-content/plugins/nd-shortcodes/addons/customizer/shortcodes/top-header/img/user-white.svg"
+												src={
+													"http://www.nicdarkthemes.com/themes/education/wp/demo/university/wp-content/plugins/nd-shortcodes/addons/customizer/shortcodes/top-header/img/user-white.svg"
+												}
 											/>
 										</Link>
 									</div>
 
 									<div className="nd_options_display_table_cell nd_options_vertical_align_middle    ">
 										<Link
-											style={{ color: ' #fff' }}
+											style={{ color: " #fff" }}
 											className="nd_options_margin_left_10"
 											to="/sign-in"
 										>
@@ -78,25 +82,25 @@ export const Header = () => {
 			>
 				<div
 					style={{
-						backgroundColor: '#ffffff',
-						borderBottom: ' 1px solid #f1f1f1',
+						backgroundColor: "#ffffff",
+						borderBottom: " 1px solid #f1f1f1",
 					}}
 					className="nd_options_section"
 				>
 					<div className="nd_options_container nd_options_clearfix nd_options_position_relative">
 						<div className="nd_options_grid_12 nd_options_display_none_all_responsive">
 							<div
-								style={{ height: '10px' }}
+								style={{ height: "10px" }}
 								className="nd_options_section"
 							></div>
 
 							<Link to="/">
 								<img
-									style={{ top: '24px' }}
+									style={{ height: "55px", width: "auto" }}
 									alt=""
 									className="nd_options_position_absolute nd_options_left_15"
 									width="170"
-									src="http://www.nicdarkthemes.com/themes/education/wp/demo/university/wp-content/uploads/sites/3/2016/08/logo-university.png"
+									src={HeaderLogo}
 								/>
 							</Link>
 
@@ -111,9 +115,12 @@ export const Header = () => {
 													</Link>
 													<SubMenu
 														items={[
-															{ to: '/gioi-thieu', label: 'Giới thiệu' },
-															{ to: '/doi-tac', label: 'Đối tác' },
-															{ to: '/cam-nhan-hoc-vien', label: 'Cảm nhận học viên' },
+															{ to: "/gioi-thieu", label: "Giới thiệu" },
+															{ to: "/doi-tac", label: "Đối tác" },
+															{
+																to: "/cam-nhan-hoc-vien",
+																label: "Cảm nhận học viên",
+															},
 														]}
 													/>
 												</li>
@@ -123,7 +130,10 @@ export const Header = () => {
 													</Link>
 													<SubMenu
 														items={[
-															{ to: '/SME-dao-tao', label: 'SME đào tạo (public)' },
+															{
+																to: "/SME-dao-tao",
+																label: "SME đào tạo (public)",
+															},
 															// {
 															// 	to: '/home2',
 															// 	label: 'Single Course',
@@ -142,8 +152,14 @@ export const Header = () => {
 															// 		},
 															// 	],
 															// },
-															{ to: '/dao-tao-theo-yeu-cau', label: 'Đào tạo theo yêu cầu' },
-															{ to: '/dao-tao-online', label: 'Đào tạo online' },
+															{
+																to: "/dao-tao-theo-yeu-cau",
+																label: "Đào tạo theo yêu cầu",
+															},
+															{
+																to: "/dao-tao-online",
+																label: "Đào tạo online",
+															},
 														]}
 													/>
 												</li>
@@ -151,12 +167,15 @@ export const Header = () => {
 													<Link to="/">TƯ VẤN</Link>
 												</li>
 												<li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1142">
-													<Link to="#" aria-current="page"> QUẢN TRỊ </Link>
+													<Link to="#" aria-current="page">
+														{" "}
+														QUẢN TRỊ{" "}
+													</Link>
 													<SubMenu
 														items={[
-															{ to: '/cong-nghe', label: 'Công nghệ' },
-															{ to: '/nhan-su', label: 'Nhân sự' },
-															{ to: '/tai-chinh', label: 'Tài chính' },															
+															{ to: "/cong-nghe", label: "Công nghệ" },
+															{ to: "/nhan-su", label: "Nhân sự" },
+															{ to: "/tai-chinh", label: "Tài chính" },
 														]}
 													/>
 												</li>
@@ -164,8 +183,8 @@ export const Header = () => {
 													<Link to="/">SỰ KIỆN</Link>
 													<SubMenu
 														items={[
-															{ to: '/nhan-vat', label: 'Nhân vật' },
-															{ to: '/su-kien', label: 'Sự kiện' }															
+															{ to: "/nhan-vat", label: "Nhân vật" },
+															{ to: "/su-kien", label: "Sự kiện" },
 														]}
 													/>
 												</li>
@@ -173,7 +192,7 @@ export const Header = () => {
 													<Link to="/">THƯ VIỆN</Link>
 												</li>
 												<li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-806">
-													<a to="/">CONTACT</a>
+													<a to="/">LIÊN HỆ</a>
 												</li>
 											</ul>
 										</div>
@@ -196,7 +215,7 @@ export const Header = () => {
 							</div>
 
 							<div
-								style={{ height: '10px' }}
+								style={{ height: "10px" }}
 								className="nd_options_section"
 							></div>
 						</div>

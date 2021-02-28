@@ -97,7 +97,7 @@ export const Home = () => {
 										href="http://www.nicdarkthemes.com/themes/education/wp/demo/university/services/"
 									>
 										<h2>
-											<strong>National Awards</strong>
+											<strong>Giải thưởng quốc gia</strong>
 										</h2>
 									</a>
 									<div className="nd_options_section nd_options_height_20"></div>
@@ -131,7 +131,7 @@ export const Home = () => {
 										href="http://www.nicdarkthemes.com/themes/education/wp/demo/university/services/"
 									>
 										<h2>
-											<strong>Best Teachers</strong>
+											<strong>Giáo viên xuất xắc nhất</strong>
 										</h2>
 									</a>
 									<div className="nd_options_section nd_options_height_20"></div>
@@ -165,7 +165,7 @@ export const Home = () => {
 										href="http://www.nicdarkthemes.com/themes/education/wp/demo/university/services/"
 									>
 										<h2>
-											<strong>Many Courses</strong>
+											<strong>Các khóa học</strong>
 										</h2>
 									</a>
 									<div className="nd_options_section nd_options_height_20"></div>
@@ -192,11 +192,11 @@ export const Home = () => {
 											}}
 											className="nd_options_second_font nd_learning_padding_5 nd_learning_border_radius_3 nd_learning_color_white_important nd_learning_display_inline_block"
 										>
-											7 COURSES
+											7 khóa học
 										</h6>
 										<div className="nd_learning_section nd_learning_height_5"></div>
 										<h1 className="">
-											<strong>Search Now</strong>
+											<strong>Tìm kiếm ngay</strong>
 										</h1>
 									</div>
 
@@ -236,7 +236,7 @@ export const Home = () => {
 													className="nd_learning_section"
 													name="difficulty-level-course"
 												>
-													<option value="">All Levels</option>
+													<option value="">Cấp độ</option>
 													<option value="beginner">Beginner</option>
 													<option value="expert">Expert</option>
 													<option value="intermediate">Intermediate</option>
@@ -251,12 +251,12 @@ export const Home = () => {
 													className="nd_learning_section"
 													name="category-course"
 												>
-													<option value="">All Categories</option>
-													<option value="art">Art</option>
-													<option value="english">English</option>
-													<option value="geometry">Geometry</option>
-													<option value="history">History</option>
-													<option value="mathematics">Mathematics</option>
+													<option value="">Môn học</option>
+													<option value="art">Mỹ thuật</option>
+													<option value="english">Tiếng Anh</option>
+													<option value="geometry">Địa lý</option>
+													<option value="history">Lịch Sử</option>
+													<option value="mathematics">Toán Học</option>
 												</select>
 											</div>
 
@@ -268,9 +268,9 @@ export const Home = () => {
 													className="nd_learning_section"
 													name="location-course"
 												>
-													<option value="">All Locations</option>
-													<option value="headquarter">Headquarter</option>
-													<option value="school-branch">School Branch</option>
+													<option value="">Địa chỉ</option>
+													<option value="headquarter">Trụ sở chính</option>
+													<option value="school-branch">Trụ sở phụ</option>
 												</select>
 											</div>
 
@@ -282,9 +282,9 @@ export const Home = () => {
 													className="nd_learning_section"
 													name="typology-course"
 												>
-													<option value="">All Typologies</option>
-													<option value="free">Free</option>
-													<option value="premium">Premium</option>
+													<option value="">Phân loại</option>
+													<option value="free">Miễn phí</option>
+													<option value="premium">Trả phí</option>
 												</select>
 											</div>
 
@@ -296,11 +296,11 @@ export const Home = () => {
 													className="nd_learning_section"
 													name="duration-course"
 												>
-													<option value="">All Durations</option>
-													<option value="1-day">1 Day</option>
-													<option value="1-week">1 Week</option>
-													<option value="2-days">2 Days</option>
-													<option value="8-hours">8 Hours</option>
+													<option value="">Thời gian</option>
+													<option value="1-day">1 Ngày</option>
+													<option value="1-week">1 Tuần</option>
+													<option value="2-days">2 Tuần</option>
+													{/* <option value="8-hours">8 giờ</option> */}
 												</select>
 											</div>
 
@@ -308,7 +308,7 @@ export const Home = () => {
 												<input
 													className="nd_learning_section"
 													type="submit"
-													value="Search"
+													value="Tìm kiếm"
 												/>
 											</div>
 										</form>
@@ -336,7 +336,7 @@ export const Home = () => {
 												className="nd_learning_position_absolute nd_learning_top_20 nd_learning_right_20 nd_learning_display_inline_block nd_learning_color_white_important nd_options_first_font nd_learning_padding_8 nd_learning_border_radius_3 nd_learning_font_size_13"
 												href="http://www.nicdarkthemes.com/themes/education/wp/demo/university/courses/philosophy/"
 											>
-												FREE
+												Miễn phí
 											</a>
 
 											<div className="nd_learning_display_table nd_learning_width_100_percentage nd_learning_height_100_percentage nd_learning_text_align_center">
@@ -346,7 +346,7 @@ export const Home = () => {
 															className="nd_learning_color_white_important nd_options_first_font"
 															href="http://www.nicdarkthemes.com/themes/education/wp/demo/university/courses/philosophy/"
 														>
-															<strong>Philosophy</strong>
+															<strong>Triết học</strong>
 														</a>
 													</h2>
 													<div className="nd_learning_section nd_learning_height_10"></div>
@@ -407,7 +407,7 @@ export const Home = () => {
 												className="nd_learning_position_absolute nd_learning_top_20 nd_learning_right_20 nd_learning_display_inline_block nd_learning_color_white_important nd_options_first_font nd_learning_padding_8 nd_learning_border_radius_3 nd_learning_font_size_13"
 												href="http://www.nicdarkthemes.com/themes/education/wp/demo/university/courses/contemporary-art/"
 											>
-												FREE
+												Miễn phí
 											</a>
 
 											<div className="nd_learning_display_table nd_learning_width_100_percentage nd_learning_height_100_percentage nd_learning_text_align_center">
@@ -417,7 +417,7 @@ export const Home = () => {
 															className="nd_learning_color_white_important nd_options_first_font"
 															href="http://www.nicdarkthemes.com/themes/education/wp/demo/university/courses/contemporary-art/"
 														>
-															<strong>Contemporary Art</strong>
+															<strong>Mỹ thuật</strong>
 														</a>
 													</h2>
 													<div className="nd_learning_section nd_learning_height_10"></div>
@@ -487,7 +487,7 @@ export const Home = () => {
 								}}
 								className=" nd_options_first_font "
 							>
-								Our Courses
+								Các khóa học
 							</h2>
 							<div style={{ height: "10px" }} className="nicdark_section"></div>
 							<h3
@@ -498,9 +498,7 @@ export const Home = () => {
 									fontWeight: "normal",
 								}}
 								className=" nd_options_first_font "
-							>
-								The Best In Our School
-							</h3>
+							></h3>
 							<div className="vc_row wpb_row vc_inner vc_row-fluid vc_custom_1469544575976 vc_row-has-fill">
 								<div className="wpb_column vc_column_container vc_col-sm-12">
 									<div className="vc_column-inner vc_custom_1469544701778">
@@ -557,7 +555,7 @@ export const Home = () => {
 																		className="nd_options_color_greydark nd_options_first_font"
 																		href="http://www.nicdarkthemes.com/themes/education/wp/demo/university/courses/philosophy/"
 																	>
-																		Philosophy
+																		Triết học
 																	</a>
 																</h3>
 																<div className="nd_learning_section nd_learning_height_20"></div>
@@ -596,7 +594,7 @@ export const Home = () => {
 																		className="nd_learning_width_100_percentage_all_iphone nd_learning_box_sizing_border_box nd_learning_text_align_center_all_iphone nd_learning_display_inline_block nd_learning_color_white_important nd_options_first_font nd_learning_padding_8 nd_learning_border_radius_3 nd_learning_font_size_13"
 																		href="http://www.nicdarkthemes.com/themes/education/wp/demo/university/courses/philosophy/"
 																	>
-																		READ MORE
+																		Đọc thêm
 																	</a>
 																</div>
 															</div>
@@ -655,7 +653,7 @@ export const Home = () => {
 																		className="nd_options_color_greydark nd_options_first_font"
 																		href="http://www.nicdarkthemes.com/themes/education/wp/demo/university/courses/contemporary-art/"
 																	>
-																		Contemporary Art
+																		Mỹ thuật
 																	</a>
 																</h3>
 																<div className="nd_learning_section nd_learning_height_20"></div>
@@ -694,7 +692,7 @@ export const Home = () => {
 																		className="nd_learning_width_100_percentage_all_iphone nd_learning_box_sizing_border_box nd_learning_text_align_center_all_iphone nd_learning_display_inline_block nd_learning_color_white_important nd_options_first_font nd_learning_padding_8 nd_learning_border_radius_3 nd_learning_font_size_13"
 																		href="http://www.nicdarkthemes.com/themes/education/wp/demo/university/courses/contemporary-art/"
 																	>
-																		READ MORE
+																		Đọc thêm
 																	</a>
 																</div>
 															</div>
@@ -752,7 +750,7 @@ export const Home = () => {
 																		className="nd_options_color_greydark nd_options_first_font"
 																		href="http://www.nicdarkthemes.com/themes/education/wp/demo/university/courses/geometry-course/"
 																	>
-																		Geometry Course
+																		Địa lý
 																	</a>
 																</h3>
 																<div className="nd_learning_section nd_learning_height_20"></div>
@@ -791,7 +789,7 @@ export const Home = () => {
 																		className="nd_learning_width_100_percentage_all_iphone nd_learning_box_sizing_border_box nd_learning_text_align_center_all_iphone nd_learning_display_inline_block nd_learning_color_white_important nd_options_first_font nd_learning_padding_8 nd_learning_border_radius_3 nd_learning_font_size_13"
 																		href="http://www.nicdarkthemes.com/themes/education/wp/demo/university/courses/geometry-course/"
 																	>
-																		READ MORE
+																		Đọc thêm
 																	</a>
 																</div>
 															</div>
@@ -821,7 +819,7 @@ export const Home = () => {
 									}}
 									className=" nd_options_first_font "
 								>
-									Our Teachers
+									{/* Our Teachers */}
 								</h2>{" "}
 								<div
 									style={{ height: "10px" }}
@@ -836,7 +834,7 @@ export const Home = () => {
 									}}
 									className=" nd_options_first_font "
 								>
-									Best Chef In Our School
+									{/* Best Chef In Our School */}
 								</h3>{" "}
 								<div
 									style={{ height: "30px" }}
@@ -864,7 +862,7 @@ export const Home = () => {
         <h1 style={{ textAlign: 'center', color: '#ffffff', fontSize: '50px' }} className=" nd_options_font_weight_bolder nd_options_counter  " data-to="97" data-speed="1000">97</h1><div style="background-color:; height: 20px;" className="nicdark_section"></div> <p style="color:#ffffff; text-align:center; font-size:16px; line-height:30px; font-weight:normal;" className=" nd_options_second_font ">YEARS OF EXPERIENCE</p> </div></div></div></div ><div className="vc_row-full-width vc_clearfix"></div><div className="vc_row wpb_row vc_row-fluid vc_custom_1467358433878"><div className="wpb_column vc_column_container vc_col-sm-12"><div className="vc_column-inner "><div className="wpb_wrapper"> <h2 style="color:#727475; text-align:; font-size:50px; line-height:50px; font-weight:bold;" className=" nd_options_first_font ">Our Blog</h2> <div style="background-color:; height: 10px;" className="nicdark_section"></div> <h3 style="color:#a3a3a3; text-align:; font-size:20px; line-height:20px; font-weight:normal;" className=" nd_options_first_font ">Follow Our News</h3> </div></div></div></div><div className="vc_row wpb_row vc_row-fluid vc_custom_1467280961639"><div className="wpb_column vc_column_container vc_col-sm-12"><div className="vc_column-inner vc_custom_1469541591315"><div className="wpb_wrapper">
        */}
 			<div className="vc_row-full-width vc_clearfix"></div>
-			<div className="vc_row wpb_row vc_row-fluid vc_custom_1467358433878">
+			{/* <div className="vc_row wpb_row vc_row-fluid vc_custom_1467358433878">
 				<div className="wpb_column vc_column_container vc_col-sm-12">
 					<div className="vc_column-inner ">
 						<div className="wpb_wrapper">
@@ -894,8 +892,8 @@ export const Home = () => {
 						</div>
 					</div>
 				</div>
-			</div>
-			<div className="vc_row wpb_row vc_row-fluid vc_custom_1467280961639">
+			</div> */}
+			{/* <div className="vc_row wpb_row vc_row-fluid vc_custom_1467280961639">
 				<div className="wpb_column vc_column_container vc_col-sm-12">
 					<div className="vc_column-inner vc_custom_1469541591315">
 						<div className="wpb_wrapper">
@@ -940,7 +938,7 @@ export const Home = () => {
 												className="nd_options_display_inline_block nd_options_line_height_16 nd_options_text_align_center nd_options_box_sizing_border_box  nd_options_color_white nd_options_first_font nd_options_padding_10_20 nd_options_border_radius_3 "
 												href="http://www.nicdarkthemes.com/themes/education/wp/demo/university/new-website/"
 											>
-												READ MORE
+												Đọc thêm
 											</a>
 										</div>
 
@@ -1112,7 +1110,7 @@ export const Home = () => {
 												className="nd_options_display_inline_block nd_options_line_height_16 nd_options_text_align_center nd_options_box_sizing_border_box  nd_options_color_white nd_options_first_font nd_options_padding_10_20 nd_options_border_radius_3 "
 												href="http://www.nicdarkthemes.com/themes/education/wp/demo/university/course-registration/"
 											>
-												READ MORE
+												Đọc thêm
 											</a>
 										</div>
 
@@ -1242,7 +1240,7 @@ export const Home = () => {
 						</div>
 					</div>
 				</div>
-			</div>
+			</div> */}
 		</div>
 	);
 };
