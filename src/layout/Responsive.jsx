@@ -1,4 +1,7 @@
 import React from "react";
+import UserWhite from "../assets/icons/user-white.svg";
+import LoginWhite from "../assets/icons/login-white.svg";
+import IconSearch from "../assets/images/icon-search-grey.png";
 
 export const Responsive = () => {
 	return (
@@ -51,7 +54,7 @@ export const Responsive = () => {
 					alt=""
 					width="25"
 					className="nd_options_close_navigation_2_sidebar_content nd_options_cursor_pointer nd_options_right_20 nd_options_top_20 nd_options_position_absolute"
-					src="http://www.nicdarkthemes.com/themes/education/wp/demo/university/wp-content/plugins/nd-shortcodes/addons/customizer/header/header-2/img/icon-close-white.svg"
+					// src="http://www.nicdarkthemes.com/themes/education/wp/demo/university/wp-content/plugins/nd-shortcodes/addons/customizer/header/header-2/img/icon-close-white.svg"
 				/>
 
 				<div className="nd_options_navigation_2 nd_options_navigation_type nd_options_text_align_right nd_options_float_right nd_options_display_none_all_responsive">

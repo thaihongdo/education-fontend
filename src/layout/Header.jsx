@@ -2,6 +2,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { SubMenu } from "../components";
 import HeaderLogo from "../assets/images/SME.png";
+import UserWhite from "../assets/icons/user-white.svg";
+import LoginWhite from "../assets/icons/login-white.svg";
+import IconSearch from "../assets/images/icon-search-grey.png";
+
 export const Header = () => {
 	return (
 		<>
@@ -30,7 +34,7 @@ export const Header = () => {
 												width="15"
 												height="15"
 												className="nd_options_margin_left_20 nd_options_float_left"
-												src="http://www.nicdarkthemes.com/themes/education/wp/demo/university/wp-content/plugins/nd-shortcodes/addons/customizer/shortcodes/top-header/img/login-white.svg"
+												src={LoginWhite}
 											/>
 										</Link>
 									</div>
@@ -54,9 +58,7 @@ export const Header = () => {
 												width="15"
 												height="15"
 												className="nd_options_margin_left_20 nd_options_float_left"
-												src={
-													"http://www.nicdarkthemes.com/themes/education/wp/demo/university/wp-content/plugins/nd-shortcodes/addons/customizer/shortcodes/top-header/img/user-white.svg"
-												}
+												src={UserWhite}
 											/>
 										</Link>
 									</div>
@@ -207,7 +209,7 @@ export const Header = () => {
 												alt=""
 												className=" nd_options_float_left nd_options_opacity_05_hover nd_options_transition_all_08_ease"
 												width="25"
-												src="http://www.nicdarkthemes.com/themes/education/wp/demo/university/wp-content/uploads/sites/3/2016/08/icon-search-grey.png"
+												src={IconSearch}
 											/>
 										</Link>
 									</div>

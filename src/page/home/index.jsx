@@ -3,6 +3,11 @@ import "./styles.css";
 import FirstBanner from "../../assets/images/1-banner.jpg";
 import SecondBanner from "../../assets/images/1-banner(19).jpg";
 import ThirdBanner from "../../assets/images/mkt-banner.jpg";
+import FullStar from "../../assets/icons/icon-star-full-white.svg";
+import HalfStar from "../../assets/icons/icon-star-half-white.svg";
+import ExampleImage from "../../assets/images/527x275(5).jpg";
+import ExampleImage2 from "../../assets/images/course1-501-350x465.png";
+import ExampleImage3 from "../../assets/images/avatar-5.jpg";
 export const Home = () => {
 	let slideIndex = 1;
 
@@ -88,7 +93,9 @@ export const Home = () => {
 										alt=""
 										className="nd_options_position_absolute nd_options_left_0"
 										width="50"
-										src="http://www.nicdarkthemes.com/themes/education/wp/demo/university/wp-content/uploads/sites/3/2016/08/service-color1.png"
+										src={
+											"http://www.nicdarkthemes.com/themes/education/wp/demo/university/wp-content/uploads/sites/3/2016/08/service-color1.png"
+										}
 									/>
 								</a>
 								<div className="nd_options_section nd_options_padding_left_70 nd_options_box_sizing_border_box">
@@ -327,7 +334,7 @@ export const Home = () => {
 										<img
 											alt=""
 											className="nd_learning_section"
-											src="http://www.nicdarkthemes.com/themes/education/wp/demo/university/wp-content/uploads/sites/3/2016/06/course1-501-350x465.png"
+											src={ExampleImage2}
 										/>
 
 										<div className="nd_learning_bg_greydark_alpha_5 nd_learning_position_absolute nd_learning_left_0 nd_learning_height_100_percentage nd_learning_width_100_percentage nd_learning_padding_30 nd_learning_box_sizing_border_box">
@@ -356,28 +363,28 @@ export const Home = () => {
 															style={{ margin: "2px" }}
 															width="15"
 															height="15"
-															src="http://www.nicdarkthemes.com/themes/education/wp/demo/university/wp-content/plugins/nd-learning/assets/img/icons/icon-star-full-white.svg"
+															src={FullStar}
 														/>
 														<img
 															alt=""
 															style={{ margin: "2px" }}
 															width="15"
 															height="15"
-															src="http://www.nicdarkthemes.com/themes/education/wp/demo/university/wp-content/plugins/nd-learning/assets/img/icons/icon-star-full-white.svg"
+															src={FullStar}
 														/>
 														<img
 															alt=""
 															style={{ margin: "2px" }}
 															width="15"
 															height="15"
-															src="http://www.nicdarkthemes.com/themes/education/wp/demo/university/wp-content/plugins/nd-learning/assets/img/icons/icon-star-full-white.svg"
+															src={FullStar}
 														/>
 														<img
 															alt=""
 															style={{ margin: "2px" }}
 															width="15"
 															height="15"
-															src="http://www.nicdarkthemes.com/themes/education/wp/demo/university/wp-content/plugins/nd-learning/assets/img/icons/icon-star-full-white.svg"
+															src={FullStar}
 														/>
 														<img
 															alt=""
@@ -398,7 +405,7 @@ export const Home = () => {
 										<img
 											alt=""
 											className="nd_learning_section"
-											src="http://www.nicdarkthemes.com/themes/education/wp/demo/university/wp-content/uploads/sites/3/2016/06/course8-350x465.jpg"
+											src={ExampleImage2}
 										/>
 
 										<div className="nd_learning_bg_greydark_alpha_5 nd_learning_position_absolute nd_learning_left_0 nd_learning_height_100_percentage nd_learning_width_100_percentage nd_learning_padding_30 nd_learning_box_sizing_border_box">
@@ -427,28 +434,28 @@ export const Home = () => {
 															style={{ margin: "2px" }}
 															width="15"
 															height="15"
-															src="http://www.nicdarkthemes.com/themes/education/wp/demo/university/wp-content/plugins/nd-learning/assets/img/icons/icon-star-full-white.svg"
+															src={FullStar}
 														/>
 														<img
 															alt=""
 															style={{ margin: "2px" }}
 															width="15"
 															height="15"
-															src="http://www.nicdarkthemes.com/themes/education/wp/demo/university/wp-content/plugins/nd-learning/assets/img/icons/icon-star-full-white.svg"
+															src={FullStar}
 														/>
 														<img
 															alt=""
 															style={{ margin: "2px" }}
 															width="15"
 															height="15"
-															src="http://www.nicdarkthemes.com/themes/education/wp/demo/university/wp-content/plugins/nd-learning/assets/img/icons/icon-star-full-white.svg"
+															src={FullStar}
 														/>
 														<img
 															alt=""
 															style={{ margin: "2px" }}
 															width="15"
 															height="15"
-															src="http://www.nicdarkthemes.com/themes/education/wp/demo/university/wp-content/plugins/nd-learning/assets/img/icons/icon-star-full-white.svg"
+															src={FullStar}
 														/>
 														<img
 															alt=""
@@ -511,12 +518,12 @@ export const Home = () => {
 																<img
 																	className="nd_learning_section"
 																	alt=""
-																	src="http://www.nicdarkthemes.com/themes/education/wp/demo/university/wp-content/uploads/sites/3/2016/06/course1-501-740x416.png"
+																	src={ExampleImage}
 																/>
 
 																<div className="nd_learning_bg_greydark_alpha_gradient_4 nd_learning_position_absolute nd_learning_left_0 nd_learning_height_100_percentage nd_learning_width_100_percentage nd_learning_padding_20 nd_learning_box_sizing_border_box">
 																	<div className="nd_learning_position_absolute nd_learning_right_20 nd_learning_top_20">
-																		<div className="nd_learning_display_inline_block nd_learning_display_none_all_iphone">
+																		{/* <div className="nd_learning_display_inline_block nd_learning_display_none_all_iphone">
 																			<a
 																				title="MAKE THE LOGIN FOR BOOKMARK"
 																				href="http://www.nicdarkthemes.com/themes/education/wp/demo/university/learning-account/"
@@ -544,7 +551,7 @@ export const Home = () => {
 																					src="http://www.nicdarkthemes.com/themes/education/wp/demo/university/wp-content/plugins/nd-learning/assets/img/icons/icon-compare-empty-white.svg"
 																				/>
 																			</a>
-																		</div>
+																		</div> */}
 																	</div>
 																</div>
 															</div>
@@ -578,7 +585,7 @@ export const Home = () => {
 																			alt=""
 																			className="nd_learning_margin_right_10 nd_learning_display_table_cell nd_learning_vertical_align_middle nd_learning_border_radius_100_percentage"
 																			width="30"
-																			src="http://www.nicdarkthemes.com/themes/education/wp/demo/university/wp-content/uploads/sites/3/2016/08/avatar-5.jpg"
+																			src={ExampleImage3}
 																		/>
 																		<p className="nd_learning_display_table_cell nd_learning_vertical_align_middle nd_learning_font_size_15">
 																			<a href="http://www.nicdarkthemes.com/themes/education/wp/demo/university/teachers/kaylin-moore/">
@@ -609,12 +616,12 @@ export const Home = () => {
 																<img
 																	className="nd_learning_section"
 																	alt=""
-																	src="http://www.nicdarkthemes.com/themes/education/wp/demo/university/wp-content/uploads/sites/3/2016/06/course8-740x416.jpg"
+																	src={ExampleImage}
 																/>
 
 																<div className="nd_learning_bg_greydark_alpha_gradient_4 nd_learning_position_absolute nd_learning_left_0 nd_learning_height_100_percentage nd_learning_width_100_percentage nd_learning_padding_20 nd_learning_box_sizing_border_box">
 																	<div className="nd_learning_position_absolute nd_learning_right_20 nd_learning_top_20">
-																		<div className="nd_learning_display_inline_block nd_learning_display_none_all_iphone">
+																		{/* <div className="nd_learning_display_inline_block nd_learning_display_none_all_iphone">
 																			<a
 																				title="MAKE THE LOGIN FOR BOOKMARK"
 																				href="http://www.nicdarkthemes.com/themes/education/wp/demo/university/learning-account/"
@@ -642,7 +649,7 @@ export const Home = () => {
 																					src="http://www.nicdarkthemes.com/themes/education/wp/demo/university/wp-content/plugins/nd-learning/assets/img/icons/icon-compare-empty-white.svg"
 																				/>
 																			</a>
-																		</div>
+																		</div> */}
 																	</div>
 																</div>
 															</div>
@@ -676,7 +683,7 @@ export const Home = () => {
 																			alt=""
 																			className="nd_learning_margin_right_10 nd_learning_display_table_cell nd_learning_vertical_align_middle nd_learning_border_radius_100_percentage"
 																			width="30"
-																			src="http://www.nicdarkthemes.com/themes/education/wp/demo/university/wp-content/uploads/sites/3/2016/08/avatar-2.jpg"
+																			src={ExampleImage3}
 																		/>
 																		<p className="nd_learning_display_table_cell nd_learning_vertical_align_middle nd_learning_font_size_15">
 																			<a href="http://www.nicdarkthemes.com/themes/education/wp/demo/university/teachers/andy-jones/">
@@ -707,13 +714,13 @@ export const Home = () => {
 																<img
 																	className="nd_learning_section"
 																	alt=""
-																	src="http://www.nicdarkthemes.com/themes/education/wp/demo/university/wp-content/uploads/sites/3/2016/09/course3-2-740x416.jpg"
+																	src={ExampleImage}
 																/>
 
 																<div className="nd_learning_bg_greydark_alpha_gradient_4 nd_learning_position_absolute nd_learning_left_0 nd_learning_height_100_percentage nd_learning_width_100_percentage nd_learning_padding_20 nd_learning_box_sizing_border_box">
-																	<div className="nd_learning_position_absolute nd_learning_right_20 nd_learning_top_20">
-																		<div className="nd_learning_display_inline_block nd_learning_display_none_all_iphone">
-																			<a
+																	{/* <div className="nd_learning_position_absolute nd_learning_right_20 nd_learning_top_20"> */}
+																	{/* <div className="nd_learning_display_inline_block nd_learning_display_none_all_iphone"> */}
+																	{/* <a
 																				title="MAKE THE LOGIN FOR BOOKMARK"
 																				href="http://www.nicdarkthemes.com/themes/education/wp/demo/university/learning-account/"
 																				className="nd_learning_tooltip_jquery nd_learning_margin_right_20 nd_learning_cursor_pointer nd_learning_display_inline_block  nd_learning_text_decoration_none"
@@ -722,76 +729,75 @@ export const Home = () => {
 																					alt=""
 																					width="20"
 																					height="20"
-																					src="http://www.nicdarkthemes.com/themes/education/wp/demo/university/wp-content/plugins/nd-learning/assets/img/icons/icon-heart-empty-white.svg"
+																					// src="http://www.nicdarkthemes.com/themes/education/wp/demo/university/wp-content/plugins/nd-learning/assets/img/icons/icon-heart-empty-white.svg"
 																				/>
-																			</a>
-																		</div>
+																			</a> */}
+																	{/* </div> */}
 
-																		<div className="nd_learning_display_inline_block nd_learning_display_none_all_iphone">
-																			<a
-																				title="MAKE THE LOGIN FOR COMPARE"
-																				href="http://www.nicdarkthemes.com/themes/education/wp/demo/university/learning-account/"
-																				className="nd_learning_tooltip_jquery nd_learning_cursor_pointer  nd_learning_display_inline_block nd_learning_text_decoration_none  "
-																			>
-																				<img
-																					alt=""
-																					width="20"
-																					height="20"
-																					src="http://www.nicdarkthemes.com/themes/education/wp/demo/university/wp-content/plugins/nd-learning/assets/img/icons/icon-compare-empty-white.svg"
-																				/>
-																			</a>
-																		</div>
-																	</div>
+																	{/* <div className="nd_learning_display_inline_block nd_learning_display_none_all_iphone">
+																		<a
+																			title="MAKE THE LOGIN FOR COMPARE"
+																			href="http://www.nicdarkthemes.com/themes/education/wp/demo/university/learning-account/"
+																			className="nd_learning_tooltip_jquery nd_learning_cursor_pointer  nd_learning_display_inline_block nd_learning_text_decoration_none  "
+																		>
+																			<img
+																				alt=""
+																				width="20"
+																				height="20"
+																				// src="http://www.nicdarkthemes.com/themes/education/wp/demo/university/wp-content/plugins/nd-learning/assets/img/icons/icon-compare-empty-white.svg"
+																			/>
+																		</a>
+																	</div> */}
 																</div>
 															</div>
-															<div className="nd_learning_section nd_learning_padding_20 nd_learning_box_sizing_border_box nd_learning_bg_white">
-																<h3>
-																	<a
-																		className="nd_options_color_greydark nd_options_first_font"
-																		href="http://www.nicdarkthemes.com/themes/education/wp/demo/university/courses/geometry-course/"
-																	>
-																		Địa lý
-																	</a>
-																</h3>
-																<div className="nd_learning_section nd_learning_height_20"></div>
-																<p>
-																	<a
-																		className=""
-																		href="http://www.nicdarkthemes.com/themes/education/wp/demo/university/courses/geometry-course/"
-																	>
-																		Lorem ipsum dolor sit amet, consectetur
-																		adipiscing elit. Aenean egestas magna at
-																		porttitor vehicula. Nullam augue augue.
-																	</a>
-																</p>
+														</div>
+														<div className="nd_learning_section nd_learning_padding_20 nd_learning_box_sizing_border_box nd_learning_bg_white">
+															<h3>
+																<a
+																	className="nd_options_color_greydark nd_options_first_font"
+																	href="http://www.nicdarkthemes.com/themes/education/wp/demo/university/courses/geometry-course/"
+																>
+																	Địa lý
+																</a>
+															</h3>
+															<div className="nd_learning_section nd_learning_height_20"></div>
+															<p>
+																<a
+																	className=""
+																	href="http://www.nicdarkthemes.com/themes/education/wp/demo/university/courses/geometry-course/"
+																>
+																	Lorem ipsum dolor sit amet, consectetur
+																	adipiscing elit. Aenean egestas magna at
+																	porttitor vehicula. Nullam augue augue.
+																</a>
+															</p>
+														</div>
+
+														<div className="nd_learning_section nd_learning_padding_20 nd_learning_box_sizing_border_box nd_learning_bg_grey nd_learning_border_top_1_solid_grey">
+															<div className="nd_learning_width_50_percentage nd_learning_display_none_all_iphone nd_learning_float_left">
+																<div className="nd_learning_display_table nd_learning_float_left">
+																	<img
+																		alt=""
+																		className="nd_learning_margin_right_10 nd_learning_display_table_cell nd_learning_vertical_align_middle nd_learning_border_radius_100_percentage"
+																		width="30"
+																		src={ExampleImage3}
+																	/>
+																	<p className="nd_learning_display_table_cell nd_learning_vertical_align_middle nd_learning_font_size_15">
+																		<a href="http://www.nicdarkthemes.com/themes/education/wp/demo/university/teachers/john-brown/">
+																			John
+																		</a>
+																	</p>
+																</div>
 															</div>
 
-															<div className="nd_learning_section nd_learning_padding_20 nd_learning_box_sizing_border_box nd_learning_bg_grey nd_learning_border_top_1_solid_grey">
-																<div className="nd_learning_width_50_percentage nd_learning_display_none_all_iphone nd_learning_float_left">
-																	<div className="nd_learning_display_table nd_learning_float_left">
-																		<img
-																			alt=""
-																			className="nd_learning_margin_right_10 nd_learning_display_table_cell nd_learning_vertical_align_middle nd_learning_border_radius_100_percentage"
-																			width="30"
-																			src="http://www.nicdarkthemes.com/themes/education/wp/demo/university/wp-content/uploads/sites/3/2016/08/avatar-7.jpg"
-																		/>
-																		<p className="nd_learning_display_table_cell nd_learning_vertical_align_middle nd_learning_font_size_15">
-																			<a href="http://www.nicdarkthemes.com/themes/education/wp/demo/university/teachers/john-brown/">
-																				John
-																			</a>
-																		</p>
-																	</div>
-																</div>
-
-																<div className="nd_learning_width_50_percentage nd_learning_width_100_percentage_all_iphone nd_learning_float_left nd_learning_text_align_right">
-																	<a
-																		style={{ backgroundColor: "#90cbde" }}
-																		className="nd_learning_width_100_percentage_all_iphone nd_learning_box_sizing_border_box nd_learning_text_align_center_all_iphone nd_learning_display_inline_block nd_learning_color_white_important nd_options_first_font nd_learning_padding_8 nd_learning_border_radius_3 nd_learning_font_size_13"
-																		href="http://www.nicdarkthemes.com/themes/education/wp/demo/university/courses/geometry-course/"
-																	>
-																		Đọc thêm
-																	</a>
-																</div>
+															<div className="nd_learning_width_50_percentage nd_learning_width_100_percentage_all_iphone nd_learning_float_left nd_learning_text_align_right">
+																<a
+																	style={{ backgroundColor: "#90cbde" }}
+																	className="nd_learning_width_100_percentage_all_iphone nd_learning_box_sizing_border_box nd_learning_text_align_center_all_iphone nd_learning_display_inline_block nd_learning_color_white_important nd_options_first_font nd_learning_padding_8 nd_learning_border_radius_3 nd_learning_font_size_13"
+																	href="http://www.nicdarkthemes.com/themes/education/wp/demo/university/courses/geometry-course/"
+																>
+																	Đọc thêm
+																</a>
 															</div>
 														</div>
 													</div>
@@ -804,54 +810,49 @@ export const Home = () => {
 						</div>
 					</div>
 				</div>
-				<div className="vc_row-full-width vc_clearfix"></div>
-				<div className="vc_row wpb_row vc_row-fluid vc_custom_1467358718647">
-					<div className="wpb_column vc_column_container vc_col-sm-12">
-						<div className="vc_column-inner ">
-							<div className="wpb_wrapper">
-								{" "}
-								<h2
-									style={{
-										color: "#727475",
-										fontSize: "50px",
-										lineHeight: "50px",
-										fontWeight: "bold",
-									}}
-									className=" nd_options_first_font "
-								>
-									{/* Our Teachers */}
-								</h2>{" "}
-								<div
-									style={{ height: "10px" }}
-									className="nicdark_section"
-								></div>{" "}
-								<h3
-									style={{
-										color: "#a3a3a3",
-										fontSize: "20px",
-										lineHeight: "20px",
-										fontWeight: "normal",
-									}}
-									className=" nd_options_first_font "
-								>
-									{/* Best Chef In Our School */}
-								</h3>{" "}
-								<div
-									style={{ height: "30px" }}
-									className="nicdark_section"
-								></div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div className="vc_row wpb_row vc_row-fluid">
-					<div className="wpb_column vc_column_container vc_col-sm-12">
-						<div className="vc_column-inner vc_custom_1469541557182">
-							<div className="wpb_wrapper"></div>
+			</div>
+			<div className="vc_row-full-width vc_clearfix"></div>
+			<div className="vc_row wpb_row vc_row-fluid vc_custom_1467358718647">
+				<div className="wpb_column vc_column_container vc_col-sm-12">
+					<div className="vc_column-inner ">
+						<div className="wpb_wrapper">
+							{" "}
+							<h2
+								style={{
+									color: "#727475",
+									fontSize: "50px",
+									lineHeight: "50px",
+									fontWeight: "bold",
+								}}
+								className=" nd_options_first_font "
+							>
+								{/* Our Teachers */}
+							</h2>{" "}
+							<div style={{ height: "10px" }} className="nicdark_section"></div>{" "}
+							<h3
+								style={{
+									color: "#a3a3a3",
+									fontSize: "20px",
+									lineHeight: "20px",
+									fontWeight: "normal",
+								}}
+								className=" nd_options_first_font "
+							>
+								{/* Best Chef In Our School */}
+							</h3>{" "}
+							<div style={{ height: "30px" }} className="nicdark_section"></div>
 						</div>
 					</div>
 				</div>
 			</div>
+			<div className="vc_row wpb_row vc_row-fluid">
+				<div className="wpb_column vc_column_container vc_col-sm-12">
+					<div className="vc_column-inner vc_custom_1469541557182">
+						<div className="wpb_wrapper"></div>
+					</div>
+				</div>
+			</div>
+			{/* </div> */}
 			{/* <h1 style={{ textAlign: 'center', color: '#ffffff', fontSize: '50px' }} className=" nd_options_font_weight_bolder nd_options_counter  " data-to="15" data-speed="1000">15</h1>
         <div style="background-color:; height: 20px;" className="nicdark_section">
           </div>

@@ -13,7 +13,7 @@ export const Tool = () => {
 							className="nd_tds_float_left"
 							width="25px"
 							height="25px;"
-							src="http://www.nicdarkthemes.com/themes/education/wp/demo/university/wp-content/plugins/nd-theme-demos-switcher/addons/dialog/img/close.svg"
+							// src="http://www.nicdarkthemes.com/themes/education/wp/demo/university/wp-content/plugins/nd-theme-demos-switcher/addons/dialog/img/close.svg"
 						/>
 					</a>
 
@@ -43,7 +43,7 @@ export const Tool = () => {
 								>
 									<img
 										className="nd_tds_section nd_tds_box_shadow_0_0_20_000_015"
-										src="http://www.nicdarkthemes.com/themes/education/wp/demo/intro/img/demos/1.jpg"
+										// src="http://www.nicdarkthemes.com/themes/education/wp/demo/intro/img/demos/1.jpg"
 									/>
 								</a>
 							</div>
@@ -55,7 +55,7 @@ export const Tool = () => {
 								>
 									<img
 										className="nd_tds_section nd_tds_box_shadow_0_0_20_000_015"
-										src="http://www.nicdarkthemes.com/themes/education/wp/demo/intro/img/demos/2.jpg"
+										// src="http://www.nicdarkthemes.com/themes/education/wp/demo/intro/img/demos/2.jpg"
 									/>
 								</a>
 							</div>
@@ -67,7 +67,7 @@ export const Tool = () => {
 								>
 									<img
 										className="nd_tds_section nd_tds_box_shadow_0_0_20_000_015"
-										src="http://www.nicdarkthemes.com/themes/education/wp/demo/intro/img/demos/3.jpg"
+										// src="http://www.nicdarkthemes.com/themes/education/wp/demo/intro/img/demos/3.jpg"
 									/>
 								</a>
 							</div>
@@ -81,7 +81,7 @@ export const Tool = () => {
 								>
 									<img
 										className="nd_tds_section nd_tds_box_shadow_0_0_20_000_015"
-										src="http://www.nicdarkthemes.com/themes/education/wp/demo/intro/img/demos/4.jpg"
+										// src="http://www.nicdarkthemes.com/themes/education/wp/demo/intro/img/demos/4.jpg"
 									/>
 								</a>
 							</div>
@@ -93,7 +93,7 @@ export const Tool = () => {
 								>
 									<img
 										className="nd_tds_section nd_tds_box_shadow_0_0_20_000_015"
-										src="http://www.nicdarkthemes.com/themes/education/wp/demo/intro/img/demos/5.jpg"
+										// src="http://www.nicdarkthemes.com/themes/education/wp/demo/intro/img/demos/5.jpg"
 									/>
 								</a>
 							</div>
@@ -105,7 +105,7 @@ export const Tool = () => {
 								>
 									<img
 										className="nd_tds_section nd_tds_box_shadow_0_0_20_000_015"
-										src="http://www.nicdarkthemes.com/themes/education/wp/demo/intro/img/demos/6.jpg"
+										// src="http://www.nicdarkthemes.com/themes/education/wp/demo/intro/img/demos/6.jpg"
 									/>
 								</a>
 							</div>
@@ -119,7 +119,7 @@ export const Tool = () => {
 								>
 									<img
 										className="nd_tds_section nd_tds_box_shadow_0_0_20_000_015"
-										src="http://www.nicdarkthemes.com/themes/education/wp/demo/intro/img/demos/7.jpg"
+										// src="http://www.nicdarkthemes.com/themes/education/wp/demo/intro/img/demos/7.jpg"
 									/>
 								</a>
 							</div>
@@ -131,7 +131,7 @@ export const Tool = () => {
 								>
 									<img
 										className="nd_tds_section nd_tds_box_shadow_0_0_20_000_015"
-										src="http://www.nicdarkthemes.com/themes/education/wp/demo/intro/img/demos/8.jpg"
+										// src="http://www.nicdarkthemes.com/themes/education/wp/demo/intro/img/demos/8.jpg"
 									/>
 								</a>
 							</div>
@@ -143,7 +143,7 @@ export const Tool = () => {
 								>
 									<img
 										className="nd_tds_section nd_tds_box_shadow_0_0_20_000_015"
-										src="http://www.nicdarkthemes.com/themes/education/wp/demo/intro/img/demos/9.jpg"
+										// src="http://www.nicdarkthemes.com/themes/education/wp/demo/intro/img/demos/9.jpg"
 									/>
 								</a>
 							</div>
