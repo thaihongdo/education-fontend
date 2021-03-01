@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 export const Responsive = () => {
 	return (
@@ -44,7 +44,7 @@ export const Responsive = () => {
 				</div>
 			</div>
 			<div
-				style={{ backgroundColor: '#174873' }}
+				style={{ backgroundColor: "#174873" }}
 				className="nd_options_navigation_2_sidebar_content nd_options_padding_40 nd_options_box_sizing_border_box nd_options_overflow_hidden nd_options_overflow_y_auto nd_options_transition_all_08_ease nd_options_height_100_percentage nd_options_position_fixed nd_options_width_300 nd_options_right_300_negative nd_options_z_index_999"
 			>
 				<img
@@ -651,7 +651,7 @@ export const Responsive = () => {
 								className="menu-item menu-item-type-post_type menu-item-object-page menu-item-806"
 							>
 								<a href="http://www.nicdarkthemes.com/themes/education/wp/demo/university/contact/">
-									CONTACT
+									LIÊN HỆ
 								</a>
 							</li>
 						</ul>

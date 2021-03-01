@@ -1,9 +1,9 @@
-import React from 'react';
-import { useForm } from 'react-hook-form';
-import { toast } from 'react-toastify';
-import { SigninService } from '../../service';
-import { LabelError } from '../../components';
-import { ButtonInfoStyled } from './styles';
+import React from "react";
+import { useForm } from "react-hook-form";
+import { toast } from "react-toastify";
+import { SigninService } from "../../service";
+import { LabelError } from "../../components";
+import { ButtonInfoStyled } from "./styles";
 
 export const Login = () => {
 	const { register, handleSubmit, errors } = useForm();
@@ -11,9 +11,10 @@ export const Login = () => {
 		SigninService.signin(data)
 			.then((res) => {
 				if (res?.success) {
-					toast.success(res.message);
+					// toast.success(res.message);
+					console.log("ok", res?.success);
 				} else {
-					toast.error(res?.message || 'Error occurred');
+					toast.error(res?.message || "Error occurred");
 				}
 			})
 			.catch((err) => {
@@ -70,7 +71,7 @@ export const Login = () => {
 								type="checkbox"
 								id="nd_learning_login_form_remember"
 								value="forever"
-							/>{' '}
+							/>{" "}
 							Remember Me
 						</label>
 					</p>
