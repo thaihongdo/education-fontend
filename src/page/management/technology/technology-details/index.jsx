@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./styles.css";
 import ExampleImage from "../../../../assets/images/527x275(5).jpg";
+import NextGrey from "../../../../assets/icons/icon-next-grey.svg";
 export const TechnologyDetails = () => {
 	return (
 		<div>
@@ -14,7 +15,7 @@ export const TechnologyDetails = () => {
 							className="nd_options_margin_left_10 nd_options_margin_right_10"
 							width="10"
 							height="10"
-							src="http://www.nicdarkthemes.com/themes/education/wp/demo/university/wp-content/plugins/nd-shortcodes/addons/breadcrumb/img/icon-next-grey.svg"
+							src={NextGrey}
 						/>{" "}
 						<Link to="/cong-nghe">Công nghệ</Link>
 						<img
@@ -22,7 +23,7 @@ export const TechnologyDetails = () => {
 							className="nd_options_margin_left_10 nd_options_margin_right_10"
 							width="10"
 							height="10"
-							src="http://www.nicdarkthemes.com/themes/education/wp/demo/university/wp-content/plugins/nd-shortcodes/addons/breadcrumb/img/icon-next-grey.svg"
+							src={NextGrey}
 						/>{" "}
 						<span className="nd_learning_current_breadcrumb">
 							Công nghệ chi tiết

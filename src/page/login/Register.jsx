@@ -19,6 +19,7 @@ export const Register = () => {
 			})
 			.catch((err) => {
 				toast.error(err?.message || err);
+				console.log("failse");
 			});
 	};
 
